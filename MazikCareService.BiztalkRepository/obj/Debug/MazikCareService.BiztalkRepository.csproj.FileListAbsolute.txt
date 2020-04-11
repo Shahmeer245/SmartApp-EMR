@@ -1,0 +1,13 @@
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.BiztalkRepository\bin\Debug\MazikCareService.BiztalkRepository.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.BiztalkRepository\bin\Debug\MazikCareService.BiztalkRepository.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.BiztalkRepository\bin\Debug\MazikCareService.BiztalkRepository.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.BiztalkRepository\obj\Debug\MazikCareService.BiztalkRepository.csprojAssemblyReference.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.BiztalkRepository\obj\Debug\MazikCareService.BiztalkRepository.csproj.CoreCompileInputs.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.BiztalkRepository\obj\Debug\MazikCareService.BiztalkRepository.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.BiztalkRepository\obj\Debug\MazikCareService.BiztalkRepository.pdb
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\bin\Debug\MazikCareService.BiztalkRepository.dll.config
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\bin\Debug\MazikCareService.BiztalkRepository.dll
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\bin\Debug\MazikCareService.BiztalkRepository.pdb
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\obj\Debug\MazikCareService.BiztalkRepository.csprojAssemblyReference.cache
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\obj\Debug\MazikCareService.BiztalkRepository.dll
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\obj\Debug\MazikCareService.BiztalkRepository.pdb

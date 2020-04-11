@@ -1,0 +1,13 @@
+E:\Projects\Main Service\MazikLogger\bin\Release\MazikLogger.dll.config
+E:\Projects\Main Service\MazikLogger\bin\Release\MazikLogger.dll
+E:\Projects\Main Service\MazikLogger\bin\Release\MazikLogger.pdb
+E:\Projects\Main Service\MazikLogger\bin\Release\Helper.dll
+E:\Projects\Main Service\MazikLogger\bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\Projects\Main Service\MazikLogger\bin\Release\Newtonsoft.Json.dll
+E:\Projects\Main Service\MazikLogger\bin\Release\Helper.pdb
+E:\Projects\Main Service\MazikLogger\bin\Release\Helper.dll.config
+E:\Projects\Main Service\MazikLogger\bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\Projects\Main Service\MazikLogger\obj\Release\MazikLogger.csprojAssemblyReference.cache
+E:\Projects\Main Service\MazikLogger\obj\Release\MazikLogger.csproj.CopyComplete
+E:\Projects\Main Service\MazikLogger\obj\Release\MazikLogger.dll
+E:\Projects\Main Service\MazikLogger\obj\Release\MazikLogger.pdb

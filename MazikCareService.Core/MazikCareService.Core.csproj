@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B607C04-FB05-4556-9CCE-883865B3F081}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MazikCareService.Core</RootNamespace>
+    <AssemblyName>MazikCareService.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MazikCareService.CosmosDB">
+      <HintPath>..\MazikCareService.CosmosDB\bin\Debug\MazikCareService.CosmosDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.4\lib\net452\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.19.8.16603, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.19.8\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.19.8.16603, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.19.8\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.5.4.0\lib\net451\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.5.4.0\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.4.0\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Client, Version=7.5.4.30215, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Client.7.5.4\lib\net45\Microsoft.OData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core, Version=7.5.4.30215, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Core.7.5.4\lib\portable-net45+win8+wpa81\Microsoft.OData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm, Version=7.5.4.30215, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Edm.7.5.4\lib\portable-net45+win8+wpa81\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial, Version=7.5.4.30215, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Spatial.7.5.4\lib\portable-net45+win8+wpa81\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.4\lib\net452\Microsoft.Xrm.Sdk.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.4.0\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication.cs" />
+    <Compile Include="Authentication\AzureADB2C.cs" />
+    <Compile Include="Authentication\DynamicsCRMOAuth.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Interfaces\IAppointmentService.cs" />
+    <Compile Include="Interfaces\ICheifComplaint.cs" />
+    <Compile Include="Interfaces\IClinic.cs" />
+    <Compile Include="Interfaces\IConcept.cs" />
+    <Compile Include="Interfaces\IConsultationSummary.cs" />
+    <Compile Include="Interfaces\ICrmService.cs" />
+    <Compile Include="Interfaces\IDropDownList.cs" />
+    <Compile Include="Interfaces\IEncounterSetup.cs" />
+    <Compile Include="Interfaces\INotes.cs" />
+    <Compile Include="Interfaces\IOptionSet.cs" />
+    <Compile Include="Interfaces\IOrderSetup.cs" />
+    <Compile Include="Interfaces\IPateintProcedure.cs" />
+    <Compile Include="Interfaces\IPatient.cs" />
+    <Compile Include="Interfaces\IPatientAllergy.cs" />
+    <Compile Include="Interfaces\IPatientCase.cs" />
+    <Compile Include="Interfaces\IPatientDiagnosis.cs" />
+    <Compile Include="Interfaces\IPatientDisposition.cs" />
+    <Compile Include="Interfaces\IPatientEncounter.cs" />
+    <Compile Include="Interfaces\IPatientLabOrder.cs" />
+    <Compile Include="Interfaces\IPatientMedication.cs" />
+    <Compile Include="Interfaces\IPatientProblem.cs" />
+    <Compile Include="Interfaces\IPatientRadiologyOrder.cs" />
+    <Compile Include="Interfaces\IPatientReferral.cs" />
+    <Compile Include="Interfaces\IPatientTherapy.cs" />
+    <Compile Include="Interfaces\IPatientVitals.cs" />
+    <Compile Include="Interfaces\IProduct.cs" />
+    <Compile Include="Interfaces\IReferringPhysician.cs" />
+    <Compile Include="Interfaces\ISpecialTest.cs" />
+    <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="Interfaces\IWorklist.cs" />
+    <Compile Include="IRoleService.cs" />
+    <Compile Include="Models\ActionManager.cs" />
+    <Compile Include="Models\Activity.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\AgeGroup.cs" />
+    <Compile Include="Models\Alert.cs" />
+    <Compile Include="Models\AppointmentTimeSlot.cs" />
+    <Compile Include="Models\CareProgram.cs" />
+    <Compile Include="Models\CaseActivities.cs" />
+    <Compile Include="Models\Claim.cs" />
+    <Compile Include="Models\Communication.cs" />
+    <Compile Include="Models\Configuration.cs" />
+    <Compile Include="Models\Device.cs" />
+    <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\FrequentlyAskedQuestions.cs" />
+    <Compile Include="Models\FTP.cs" />
+    <Compile Include="Models\Insurance.cs" />
+    <Compile Include="Models\Integration\MessageCondition.cs" />
+    <Compile Include="Models\Integration\MessageConnection.cs" />
+    <Compile Include="Models\Integration\MessageEntity.cs" />
+    <Compile Include="Models\Integration\MessageEntityColumn.cs" />
+    <Compile Include="Models\Integration\MessageHeader.cs" />
+    <Compile Include="Models\Integration\MessageHeaderQueries.cs" />
+    <Compile Include="Models\Integration\MessageQuery.cs" />
+    <Compile Include="Models\Integration\Query.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\PatientCarePlan.cs" />
+    <Compile Include="Models\PatientCaseInsurance.cs" />
+    <Compile Include="Models\CaseParameter.cs" />
+    <Compile Include="Models\ConsultationSummary.cs" />
+    <Compile Include="Models\AllergyReaction.cs" />
+    <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\CheifComplaint.cs" />
+    <Compile Include="Models\Clinic.cs" />
+    <Compile Include="Models\ClinicalTemplateNarration.cs" />
+    <Compile Include="Models\ClinicalTemplateQuestion.cs" />
+    <Compile Include="Models\ClinicalTemplate.cs" />
+    <Compile Include="Models\ClinicalTemplateSection.cs" />
+    <Compile Include="Models\Concept.cs" />
+    <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\DropDown.cs" />
+    <Compile Include="Models\DropDownList.cs" />
+    <Compile Include="Models\EducationalResource.cs" />
+    <Compile Include="Models\EncounterSetup.cs" />
+    <Compile Include="Models\HL7\Acknowledgment.cs" />
+    <Compile Include="Models\HL7\AckParam.cs" />
+    <Compile Include="Models\HL7\Helper.cs" />
+    <Compile Include="Models\HL7\HL7_Address.cs" />
+    <Compile Include="Models\HL7\ADT_A08_Message.cs" />
+    <Compile Include="Models\HL7\ADT_A40_Message.cs" />
+    <Compile Include="Models\HL7\ADT_A04_Message.cs" />
+    <Compile Include="Models\HL7\HL7_AssignedPatientLocation.cs" />
+    <Compile Include="Models\HL7\HL7_AttendingDoctor.cs" />
+    <Compile Include="Models\HL7\HL7_Contact.cs" />
+    <Compile Include="Models\HL7\HL7_EnteringOrganization.cs" />
+    <Compile Include="Models\HL7\HL7_EventType.cs" />
+    <Compile Include="Models\HL7\HL7_MRG.cs" />
+    <Compile Include="Models\HL7\HL7_MSH.cs" />
+    <Compile Include="Models\HL7\HL7_NTE.cs" />
+    <Compile Include="Models\HL7\HL7_OBR.cs" />
+    <Compile Include="Models\HL7\HL7_ORC.cs" />
+    <Compile Include="Models\HL7\HL7_OrderingFacility.cs" />
+    <Compile Include="Models\HL7\HL7_OrderNumber.cs" />
+    <Compile Include="Models\HL7\HL7_ORM_O01.cs" />
+    <Compile Include="Models\HL7\HL7_Patient.cs" />
+    <Compile Include="Models\HL7\HL7_PatientVIsit.cs" />
+    <Compile Include="Models\HL7\HL7_Provider.cs" />
+    <Compile Include="Models\HL7\HL7_UniversalServiceIdentifier.cs" />
+    <Compile Include="Models\HL7\LIS.cs" />
+    <Compile Include="Models\HL7\LISORMO01OutboundParam.cs" />
+    <Compile Include="Models\HL7\LISORUR01OutboundParam.cs" />
+    <Compile Include="Models\HL7\Log.cs" />
+    <Compile Include="Models\HL7\LIS_OrderResult.cs" />
+    <Compile Include="Models\HL7\NTE.cs" />
+    <Compile Include="Models\HL7\RISORMO01OutboundParam.cs" />
+    <Compile Include="Models\HL7\ORMOutbound.cs" />
+    <Compile Include="Models\HL7\RISORUR01OutboundParam.cs" />
+    <Compile Include="Models\HL7\RIS_OrderResult.cs" />
+    <Compile Include="Models\HL7\RIS.cs" />
+    <Compile Include="Models\LoginModelOutput.cs" />
+    <Compile Include="Models\Mentions.cs" />
+    <Compile Include="Models\Notes.cs" />
+    <Compile Include="Models\OptionSet.cs" />
+    <Compile Include="Models\OrderSetup.cs" />
+    <Compile Include="Models\Organization.cs" />
+    <Compile Include="Models\Parameters.cs" />
+    <Compile Include="Models\Patient.cs" />
+    <Compile Include="Models\PatientAllergy.cs" />
+    <Compile Include="Models\PatientCase.cs" />
+    <Compile Include="Models\PatientCondition.cs" />
+    <Compile Include="Models\PatientDevice.cs" />
+    <Compile Include="Models\PatientDiagnosis.cs" />
+    <Compile Include="Models\PatientDisposition.cs" />
+    <Compile Include="Models\PatientEncounter.cs" />
+    <Compile Include="Models\PatientHistory.cs" />
+    <Compile Include="Models\PatientImmunization.cs" />
+    <Compile Include="Models\PatientInsurance.cs" />
+    <Compile Include="Models\PatientLabOrder.cs" />
+    <Compile Include="Models\PatientMedication.cs" />
+    <Compile Include="Models\PatientObservation.cs" />
+    <Compile Include="Models\PatientOrder.cs" />
+    <Compile Include="Models\PatientOrderAdministration.cs" />
+    <Compile Include="Models\PatientPrescription.cs" />
+    <Compile Include="Models\PatientProblem.cs" />
+    <Compile Include="Models\PatientProcedure.cs" />
+    <Compile Include="Models\PatientProcedureRequest.cs" />
+    <Compile Include="Models\PatientRadiologyOrder.cs" />
+    <Compile Include="Models\PatientReferral.cs" />
+    <Compile Include="Models\PatientReferralOrder.cs" />
+    <Compile Include="Models\PatientSpecialTest.cs" />
+    <Compile Include="Models\PatientTherapy.cs" />
+    <Compile Include="Models\PatientVisit.cs" />
+    <Compile Include="Models\PatientVisitAppointments.cs" />
+    <Compile Include="Models\PatientVisitProducts.cs" />
+    <Compile Include="Models\PatientVisitTracking.cs" />
+    <Compile Include="Models\PatientVitals.cs" />
+    <Compile Include="Models\Physician.cs" />
+    <Compile Include="Models\PhysicianLocation.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\PostComment.cs" />
+    <Compile Include="Models\PowerBIAccessToken.cs" />
+    <Compile Include="Models\PowerBIReport.cs" />
+    <Compile Include="Models\Products.cs" />
+    <Compile Include="Models\ReferringPhysician.cs" />
+    <Compile Include="Models\Relationship.cs" />
+    <Compile Include="Models\Reminder.cs" />
+    <Compile Include="Models\ReturnStatus.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Speciality.cs" />
+    <Compile Include="Models\StatusManager.cs" />
+    <Compile Include="Models\StatusManagerHeader.cs" />
+    <Compile Include="Models\StatusManagerParams.cs" />
+    <Compile Include="Models\UITemplate.cs" />
+    <Compile Include="Models\Unit.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Vitals.cs" />
+    <Compile Include="Models\Worklist.cs" />
+    <Compile Include="ProgramEnrollmentRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleRepository.cs" />
+    <Compile Include="RoleService.cs" />
+    <Compile Include="Services\CrmService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{078643EB-D0C9-48B3-8373-B112FDACA2F7}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MazikCareService.AXRepository\MazikCareService.AXRepository.csproj">
+      <Project>{b7eb327f-f6f8-49c1-aa1c-ff15c77d83f9}</Project>
+      <Name>MazikCareService.AXRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MazikCareService.BiztalkRepository\MazikCareService.BiztalkRepository.csproj">
+      <Project>{d05f2912-79cc-49b1-8192-1dbda4a59a26}</Project>
+      <Name>MazikCareService.BiztalkRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MazikCareService.CRMRepository\MazikCareService.CRMRepository.csproj">
+      <Project>{c1b15abc-e459-45e5-af86-cc05ef30863e}</Project>
+      <Name>MazikCareService.CRMRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MazikLogger\MazikLogger.csproj">
+      <Project>{b6900354-67a1-49cc-b1a8-5a9847ec51ec}</Project>
+      <Name>MazikLogger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

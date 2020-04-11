@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ns4="https://Birch.HL7.Schemas.Api.Case" xmlns:ns5="https://Birch.HL7.Schemas.Api.MessageControl" xmlns:ns2="https://Birch.HL7.Schemas.Api.Status" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="https://BTAHL7Schemas.Api.Patient" xmlns="http://Birch.HL7.Schemas.Api.GetOrderDetail" xmlns:ns3="https://Birch.HL7.Schemas.Api.Appointment" xmlns:ns1="https://Birch.HL7.Schemas.Api.Order" targetNamespace="http://Birch.HL7.Schemas.Api.GetOrderDetail" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo />
+  </xs:annotation>
+  <xs:element name="GetOrderDetail">
+    <xs:annotation>
+      <xs:appinfo />
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OrderId" type="xs:string" />
+        <xs:element name="PatientId" type="xs:string" />
+        <xs:element name="OrderStatus" type="xs:string" />
+        <xs:element name="AppointmentRecId" type="xs:string" />
+        <xs:element name="CaseId" type="xs:string" />
+        <xs:element name="MessageControlId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

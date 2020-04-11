@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HMMazikCareGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HMMazikCareGroup?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/HMMazikCareGroup?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="HMCaseType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="InPatient" />
+      <xs:enumeration value="OutPatient" />
+      <xs:enumeration value="All" />
+      <xs:enumeration value="Surgery" />
+      <xs:enumeration value="Physiotherapy" />
+      <xs:enumeration value="Emergency" />
+      <xs:enumeration value="InvoiceAndPay" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMCaseType" nillable="true" type="tns:HMCaseType" />
+  <xs:simpleType name="HMServiceStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Started">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Decline">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Complete">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NotStarted">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Postponed">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NoShow">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">15</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Cancelled">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ordered">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">17</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Paid">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">18</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMServiceStatus" nillable="true" type="tns:HMServiceStatus" />
+  <xs:simpleType name="HMUrgency">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Routine" />
+      <xs:enumeration value="Stat" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMUrgency" nillable="true" type="tns:HMUrgency" />
+  <xs:complexType name="HMCaseTransContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmBatchNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmExpiryDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmManufacturerName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMCaseTransContract" nillable="true" type="tns:HMCaseTransContract" />
+  <xs:simpleType name="HMCaseStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Open" />
+      <xs:enumeration value="Closed" />
+      <xs:enumeration value="ClinicalDischarge" />
+      <xs:enumeration value="FinancialDischarge" />
+      <xs:enumeration value="PhysicalDischarge" />
+      <xs:enumeration value="OnHold" />
+      <xs:enumeration value="Billed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMCaseStatus" nillable="true" type="tns:HMCaseStatus" />
+  <xs:complexType name="HMPatientDataContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q2:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmAddress" nillable="true" type="xs:string" />
+          <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="parmAddressList" nillable="true" type="q3:ArrayOfstring" />
+          <xs:element minOccurs="0" name="parmAge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmArabicFirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmArabicLastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmArabicMiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDateOfBirth" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmDocumentList" nillable="true" type="tns:ArrayOfHMPatientDocumentContract" />
+          <xs:element minOccurs="0" name="parmEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFax" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFullName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmGender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmGenderValue" type="xs:int" />
+          <xs:element minOccurs="0" name="parmHijriDateOfBirth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmHomePhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsVip" type="q2:NoYes" />
+          <xs:element minOccurs="0" name="parmLanguage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmLastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMRN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMaritalStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmMobilePhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmNationalIdExpiry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmNationalIdExpiryHijri" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmNationalIdType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmNationalIdTypeValue" type="xs:int" />
+          <xs:element minOccurs="0" name="parmNationalIdValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmNationality" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPreferredModeofCommunication" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPrefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPrimaryAddress" nillable="true" type="tns:HMLogisticsPostalAddressContract" />
+          <xs:element minOccurs="0" name="parmRegistrationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmRelationshipList" nillable="true" type="tns:ArrayOfHMPatientRelationshipContract" />
+          <xs:element minOccurs="0" name="parmWorkPhone" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMPatientDataContract" nillable="true" type="tns:HMPatientDataContract" />
+  <xs:complexType name="ArrayOfHMPatientDocumentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HMPatientDocumentContract" nillable="true" type="tns:HMPatientDocumentContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHMPatientDocumentContract" nillable="true" type="tns:ArrayOfHMPatientDocumentContract" />
+  <xs:complexType name="HMPatientDocumentContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q4:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmDocument" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDocumentRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="parmName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMPatientDocumentContract" nillable="true" type="tns:HMPatientDocumentContract" />
+  <xs:complexType name="HMLogisticsPostalAddressContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q5:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmAddressType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmStreet" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmZipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMLogisticsPostalAddressContract" nillable="true" type="tns:HMLogisticsPostalAddressContract" />
+  <xs:complexType name="ArrayOfHMPatientRelationshipContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HMPatientRelationshipContract" nillable="true" type="tns:HMPatientRelationshipContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHMPatientRelationshipContract" nillable="true" type="tns:ArrayOfHMPatientRelationshipContract" />
+  <xs:complexType name="HMPatientRelationshipContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q6:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRelationshipType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMPatientRelationshipContract" nillable="true" type="tns:HMPatientRelationshipContract" />
+  <xs:complexType name="HMPatientInfoContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q7:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MRN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PatientImage" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="PatientStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmAge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmFullName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmGenderValue" type="xs:int" />
+          <xs:element minOccurs="0" name="parmNationalIdValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRegistrationDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMPatientInfoContract" nillable="true" type="tns:HMPatientInfoContract" />
+  <xs:simpleType name="HMActivityStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Open" />
+      <xs:enumeration value="PendingConsultation" />
+      <xs:enumeration value="PendingTriage" />
+      <xs:enumeration value="InTriage" />
+      <xs:enumeration value="InConsultation" />
+      <xs:enumeration value="ConsultationComplete" />
+      <xs:enumeration value="TriageComplete" />
+      <xs:enumeration value="InTreatment" />
+      <xs:enumeration value="TreatmentComplete" />
+      <xs:enumeration value="PendingTreatment" />
+      <xs:enumeration value="InAssessment" />
+      <xs:enumeration value="AssessmentComplete" />
+      <xs:enumeration value="PendingAssessment" />
+      <xs:enumeration value="ClinicallyDischarged" />
+      <xs:enumeration value="PhysicallyDischarged" />
+      <xs:enumeration value="FinanciallyDischarged" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMActivityStatus" nillable="true" type="tns:HMActivityStatus" />
+  <xs:complexType name="ArrayOfHMDropDownContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HMDropDownContract" nillable="true" type="tns:HMDropDownContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHMDropDownContract" nillable="true" type="tns:ArrayOfHMDropDownContract" />
+  <xs:complexType name="HMDropDownContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q8:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmColorHex" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmIsDefault" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMDropDownContract" nillable="true" type="tns:HMDropDownContract" />
+  <xs:simpleType name="HMHL7MessageDirection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Outbound" />
+      <xs:enumeration value="Inbound" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMHL7MessageDirection" nillable="true" type="tns:HMHL7MessageDirection" />
+  <xs:simpleType name="HMHL7MessageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ADT04" />
+      <xs:enumeration value="ADT08" />
+      <xs:enumeration value="ADT40" />
+      <xs:enumeration value="ORM01" />
+      <xs:enumeration value="ORU01" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMHL7MessageType" nillable="true" type="tns:HMHL7MessageType" />
+  <xs:complexType name="ArrayOfHMPatientVisitContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HMPatientVisitContract" nillable="true" type="tns:HMPatientVisitContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHMPatientVisitContract" nillable="true" type="tns:ArrayOfHMPatientVisitContract" />
+  <xs:complexType name="HMPatientVisitContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q9:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmVisitReason" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmVisitRecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMPatientVisitContract" nillable="true" type="tns:HMPatientVisitContract" />
+  <xs:complexType name="HMClinicDataContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q10:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmClinicCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmClinicName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmClinicRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="parmClinicRecIdParent" type="xs:long" />
+          <xs:element minOccurs="0" name="parmIsDefault" type="xs:boolean" />
+          <xs:element minOccurs="0" name="parmSpecialtyRecId" type="xs:long" />
+          <xs:element minOccurs="0" name="parmSubClinicList" nillable="true" type="tns:ArrayOfHMClinicDataContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMClinicDataContract" nillable="true" type="tns:HMClinicDataContract" />
+  <xs:complexType name="ArrayOfHMClinicDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HMClinicDataContract" nillable="true" type="tns:HMClinicDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHMClinicDataContract" nillable="true" type="tns:ArrayOfHMClinicDataContract" />
+  <xs:simpleType name="HMFileLocationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Clinic">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Laboratory">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Radiology" />
+      <xs:enumeration value="Pharmacy" />
+      <xs:enumeration value="NursingUnit" />
+      <xs:enumeration value="TreatmentUnit" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMFileLocationType" nillable="true" type="tns:HMFileLocationType" />
+  <xs:complexType name="HMResourceDataContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q11:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmResourceCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResourceFirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResourceLastname" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResourceMiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResourceName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResourceRecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMResourceDataContract" nillable="true" type="tns:HMResourceDataContract" />
+  <xs:complexType name="ArrayOfHMResourceDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HMResourceDataContract" nillable="true" type="tns:HMResourceDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHMResourceDataContract" nillable="true" type="tns:ArrayOfHMResourceDataContract" />
+  <xs:complexType name="ArrayOfHMSpecialityDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HMSpecialityDataContract" nillable="true" type="tns:HMSpecialityDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHMSpecialityDataContract" nillable="true" type="tns:ArrayOfHMSpecialityDataContract" />
+  <xs:complexType name="HMSpecialityDataContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q12:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmSpecialityName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmSpecialityRecId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMSpecialityDataContract" nillable="true" type="tns:HMSpecialityDataContract" />
+  <xs:complexType name="HMAppointmentContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q13:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AppointmentDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AppointmentNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConfirmationStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsCareBookRegistered" type="xs:int" />
+          <xs:element minOccurs="0" name="PatientImage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefusedToProvidePicture" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isPrimaryApp" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmAge" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmApptEndDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmApptEndTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmApptRecId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmApptStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmApptTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmApptType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmApptTypeRecId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmArrivalTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmBalanceStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCaseId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmClientName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmClinic" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmClinicCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmCompanyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmConfirmationStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoctorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoctorFirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoctorLastname" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoctorMiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoctorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDoctorPrimaryContact" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmDuration" type="xs:int" />
+          <xs:element minOccurs="0" name="parmEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmNextAvlblDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmNextAvlblTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmOnHoldStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="parmPatientDOB" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPatientFileNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPatientName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPatientRecId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmRoomName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmStatusValue" type="tns:HMResourceSchedulingAppointmentStatus" />
+          <xs:element minOccurs="0" name="parmTriageRequired" type="xs:boolean" />
+          <xs:element minOccurs="0" name="parmbalanceAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="patientPhysicalFileNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HMAppointmentContract" nillable="true" type="tns:HMAppointmentContract" />
+  <xs:simpleType name="HMResourceSchedulingAppointmentStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Open" />
+      <xs:enumeration value="Closed" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="CheckedIn" />
+      <xs:enumeration value="CheckedOut" />
+      <xs:enumeration value="Examined" />
+      <xs:enumeration value="NoShow" />
+      <xs:enumeration value="Edited" />
+      <xs:enumeration value="Tentative" />
+      <xs:enumeration value="Waiting" />
+      <xs:enumeration value="Confirmed" />
+      <xs:enumeration value="UndoCheckout" />
+      <xs:enumeration value="UndoCheckIn" />
+      <xs:enumeration value="Reserved" />
+      <xs:enumeration value="ToBeReschedule" />
+      <xs:enumeration value="InvoiceAndPay" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HMResourceSchedulingAppointmentStatus" nillable="true" type="tns:HMResourceSchedulingAppointmentStatus" />
+  <xs:complexType name="ArrayOfHMAppointmentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HMAppointmentContract" nillable="true" type="tns:HMAppointmentContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHMAppointmentContract" nillable="true" type="tns:ArrayOfHMAppointmentContract" />
+</xs:schema>

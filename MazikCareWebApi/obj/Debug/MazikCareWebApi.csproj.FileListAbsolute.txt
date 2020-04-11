@@ -1,0 +1,259 @@
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.csprojAssemblyReference.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.csproj.CoreCompileInputs.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\ApplicationInsights.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\csc.exe
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\System.Collections.Immutable.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\vbc.exe
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\VBCSCompiler.exe
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\roslyn\VBCSCompiler.exe.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareWebApi.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareWebApi.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareWebApi.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Antlr3.Runtime.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\EntityFramework.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\EntityFramework.SqlServer.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Helper.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.Core.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.CosmosDB.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.CRMRepository.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikLogger.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.ApplicationInsights.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Crm.Sdk.Proxy.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Logging.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Cors.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Owin.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Security.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Web.Infrastructure.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Xrm.Sdk.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Newtonsoft.Json.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Owin.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Net.Http.Extensions.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Net.Http.Formatting.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Net.Http.Primitives.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Cors.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Helpers.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Http.Cors.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Http.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Http.Owin.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Http.WebHost.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Mvc.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Optimization.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Razor.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.WebPages.Deployment.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.WebPages.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.WebPages.Razor.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\WebGrease.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.AXRepository.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.BiztalkRepository.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.OData.Client.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.OData.Edm.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Azure.Documents.Client.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.OData.Core.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Spatial.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Helper.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Helper.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.Core.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.Core.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.CRMRepository.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.CRMRepository.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikLogger.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikLogger.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.CosmosDB.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.ApplicationInsights.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Crm.Sdk.Proxy.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Logging.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Logging.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Owin.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Cors.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Security.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Xrm.Sdk.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Newtonsoft.Json.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Http.Cors.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Helpers.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Http.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Http.WebHost.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Mvc.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Optimization.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Razor.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.WebPages.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.WebPages.Deployment.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.WebPages.Razor.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\EntityFramework.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\EntityFramework.SqlServer.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\System.Web.Http.Owin.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.AXRepository.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.AXRepository.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.BiztalkRepository.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\MazikCareService.BiztalkRepository.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.OData.Client.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.OData.Edm.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Azure.Documents.Client.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.OData.Core.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\bin\Microsoft.Spatial.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.csproj.CopyComplete
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\ApplicationInsights.config
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\csc.exe
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\vbc.exe
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\VBCSCompiler.exe
+E:\Projects\Main Service\MazikCareWebApi\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareWebApi.dll.config
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareWebApi.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareWebApi.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\Antlr3.Runtime.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\EntityFramework.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\EntityFramework.SqlServer.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Helper.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.Core.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.CosmosDB.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.CRMRepository.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikLogger.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AI.DependencyCollector.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.ApplicationInsights.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Crm.Sdk.Proxy.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Logging.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Cors.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Owin.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Security.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Xrm.Sdk.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Newtonsoft.Json.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Owin.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Net.Http.Extensions.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Net.Http.Formatting.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Net.Http.Primitives.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Cors.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Helpers.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Http.Cors.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Http.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Http.Owin.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Http.WebHost.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Mvc.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Optimization.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Razor.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.WebPages.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.WebPages.Razor.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\WebGrease.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.AXRepository.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.BiztalkRepository.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.OData.Client.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.OData.Edm.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Azure.Documents.Client.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.OData.Core.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Spatial.dll
+E:\Projects\Main Service\MazikCareWebApi\bin\Helper.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\Helper.dll.config
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.Core.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.Core.dll.config
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.CRMRepository.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.CRMRepository.dll.config
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikLogger.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikLogger.dll.config
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.CosmosDB.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AI.DependencyCollector.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.ApplicationInsights.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Crm.Sdk.Proxy.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Logging.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Logging.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Tokens.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Owin.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Cors.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Owin.Security.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Xrm.Sdk.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Newtonsoft.Json.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.IdentityModel.Tokens.Jwt.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Http.Cors.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Helpers.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Http.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Http.WebHost.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Mvc.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Optimization.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Razor.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.WebPages.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.WebPages.Razor.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\EntityFramework.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\EntityFramework.SqlServer.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\System.Web.Http.Owin.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.AXRepository.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.AXRepository.dll.config
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.BiztalkRepository.pdb
+E:\Projects\Main Service\MazikCareWebApi\bin\MazikCareService.BiztalkRepository.dll.config
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.OData.Client.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.OData.Edm.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Azure.Documents.Client.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.OData.Core.xml
+E:\Projects\Main Service\MazikCareWebApi\bin\Microsoft.Spatial.xml
+E:\Projects\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.csprojAssemblyReference.cache
+E:\Projects\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.csproj.CopyComplete
+E:\Projects\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.dll
+E:\Projects\Main Service\MazikCareWebApi\obj\Debug\MazikCareWebApi.pdb

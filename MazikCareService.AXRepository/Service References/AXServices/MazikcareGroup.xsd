@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+  <xs:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_fielId" type="xs:int" />
+        <xs:element minOccurs="0" name="_userType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_drResourceMasterRecid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_clinicRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_clinicType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="response" nillable="true" type="q1:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetUserAppointmentsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resourceRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_clinicRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_startDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_endDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="onlyTriaged" type="xs:boolean" />
+        <xs:element minOccurs="0" name="searchValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetUserAppointmentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q2:ArrayOfHMAppointmentContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetTodaysAppointmentsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_pageNumber" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetTodaysAppointmentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q3:ArrayOfHMAppointmentContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetAppointmentDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_appointmentRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetAppointmentDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q4:HMAppointmentContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetClinicsListRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_hmResourceMasterRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetClinicsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q5:ArrayOfHMClinicDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetDashboardAppointmentsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_fieldId" type="xs:int" />
+        <xs:element minOccurs="0" name="_search" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_userType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_drResourceMasterRecid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_clinicRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_clinicType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetDashboardAppointmentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q6:HMAppointmentDashboardContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetAppointmentsbyDateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_pageNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="_startDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="_endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetAppointmentsbyDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q7:ArrayOfHMAppointmentContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetFilteredAppointmentsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_pageNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="_fieldId" type="xs:int" />
+        <xs:element minOccurs="0" name="_value" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_search" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_userType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_drResourceMasterRecid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_clinicRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_clinicType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetFilteredAppointmentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q8:HMAppointmentDashboardContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetOpenAppointmentsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_pageNumber" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetOpenAppointmentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q9:ArrayOfHMAppointmentContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceIsAppointmentProgressiveRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_appointmentRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceIsAppointmentProgressiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceUpdateAppointmentNotesRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_appointmentRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_updatedNotes" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceUpdateAppointmentNotesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceSetAppointmentStatusRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_appointmentRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_reasonRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_userRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_isWorker" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_appointmentStatusId" type="xs:int" />
+        <xs:element minOccurs="0" name="_note" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceSetAppointmentStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="response" nillable="true" type="q10:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="response" nillable="true" type="q11:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceUpdateDispositionDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_appointmentRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_dispositionComments" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_dispositionFollowUp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentSchedulingServiceUpdateDispositionDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentServiceAddServiceInAppointmentRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_appointmentRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_examCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_responsibility" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMAppointmentServiceAddServiceInAppointmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceCreateCaseTransRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemid" nillable="true" type="xs:string" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_serviceStatus" type="q12:HMServiceStatus" />
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_caseGuid" type="q13:guid" />
+        <xs:element minOccurs="0" name="_apptRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_quantity" type="xs:decimal" />
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_orderId" type="q14:guid" />
+        <xs:element minOccurs="0" name="_unit" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_urgency" type="q15:HMUrgency" />
+        <xs:element minOccurs="0" name="notesToPharmacy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientInstructionsEng" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientInstructionsArabic" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_specialityRecId" type="xs:long" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_prnIndication" type="q16:HMPRNIndication" />
+        <xs:element minOccurs="0" name="_treatmentLocation" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceCreateCaseTransResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceCreateCaseRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_patientRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_organizationalUnitRecId" type="xs:long" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_caseType" type="q17:HMCaseType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceCreateCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceUpdateCaseTransStatusRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_caseTransRecId" type="xs:long" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_serviceStatus" type="q18:HMServiceStatus" />
+        <xs:element minOccurs="0" name="createCharge" type="xs:boolean" />
+        <xs:element minOccurs="0" name="_apptRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_batchId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_caseId" type="q19:guid" />
+        <xs:element minOccurs="0" name="_resourceRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceUpdateCaseTransStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceUpdateReportUrlRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_hmcaseTransRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_reportPath" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_reportUrl" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceUpdateReportUrlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceGetCaseTransDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceGetCaseTransDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q20:HMCaseTransContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceUpdateCaseStatusRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_caseGUID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_caseStatus" type="q21:HMCaseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCaseServiceUpdateCaseStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCommonSendPatientSmsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_patientRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_sms" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCommonSendPatientSmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCommonSendResourceSmsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resourceRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_sms" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCommonSendResourceSmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCommonCheckItemInStockRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_itemId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_clinicRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCommonCheckItemInStockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="response" nillable="true" type="q22:ArrayOfKeyValueOfintint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCommonGetDocumentsBase64Request">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="docuRefRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMCommonGetDocumentsBase64Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetDocumentTypesRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetDocumentTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q23:ArrayOfHMDropDownContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetActivityStatusRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_status" type="q24:HMActivityStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetActivityStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q25:ArrayOfHMDropDownContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetGenderRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetGenderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q26:ArrayOfHMDropDownContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetSearchPatientFilterRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetSearchPatientFilterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q27:ArrayOfHMDropDownContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetNationalIdTypeRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMDropDownServiceGetNationalIdTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q28:ArrayOfHMDropDownContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMIntegrationServiceUpdateLogRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_messageControlId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ackCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_textMessage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMIntegrationServiceUpdateLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMIntegrationServiceCreateLogRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_messageControlId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_messageType" type="q29:HMHL7MessageType" />
+        <xs:element minOccurs="0" name="_refId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_direction" type="q30:HMHL7MessageDirection" />
+        <xs:element minOccurs="0" name="_ackCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_textMessage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMIntegrationServiceCreateLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceCreatePatientRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_contract" nillable="true" type="q31:HMPatientDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceCreatePatientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceGetPatientBasicDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_patientRecId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceGetPatientBasicDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q32:HMPatientInfoContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceGetPatientImageRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="patientRecId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceGetPatientImageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceGetPatientDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_patientRecId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceGetPatientDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q33:HMPatientDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceSearchPatientDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_searchValue" nillable="true" type="xs:string" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_searchBy" type="q34:HMSearchPatientBy" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientServiceSearchPatientDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q35:ArrayOfHMPatientInfoContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientVisitServiceUpdateVisitReasonRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_caseGuid" type="q36:guid" />
+        <xs:element minOccurs="0" name="_apptRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_visitReason" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientVisitServiceUpdateVisitReasonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="response" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientVisitServiceGetPatientVisitRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_caseGuid" type="q37:guid" />
+        <xs:element minOccurs="0" name="_apptRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_patientRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMPatientVisitServiceGetPatientVisitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q38:ArrayOfHMPatientVisitContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetResourceClinicsListRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_hmResourceMasterRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetResourceClinicsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q39:ArrayOfHMClinicDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetResourceSpecialitiesListRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_hmResourceMasterRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetResourceSpecialitiesListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q40:ArrayOfHMSpecialityDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceVerifyResourceSMSCodeRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_smsCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_smsRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceVerifyResourceSMSCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q41:HMResourceLoginSMSCodeContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetClinicsListRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="_locationType" type="q42:HMFileLocationType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetClinicsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q43:ArrayOfHMClinicDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetResourceListRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_specialityRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetResourceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q44:ArrayOfHMResourceDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetResourceDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetResourceDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q45:HMResourceDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGenerateResourceSMSCodeRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_resourceRecId" type="xs:long" />
+        <xs:element minOccurs="0" name="_smsRecId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGenerateResourceSMSCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q46:HMResourceLoginSMSCodeContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetClinicDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_recId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HMResourceServiceGetClinicDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" minOccurs="0" name="response" nillable="true" type="q47:HMClinicDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,27 @@
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\MazikLogger.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\MazikLogger.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\MazikLogger.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\Helper.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\Newtonsoft.Json.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\Helper.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\Helper.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\obj\Debug\MazikLogger.csprojAssemblyReference.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\obj\Debug\MazikLogger.csproj.CoreCompileInputs.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\obj\Debug\MazikLogger.csproj.CopyComplete
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\obj\Debug\MazikLogger.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikLogger\obj\Debug\MazikLogger.pdb
+E:\Projects\Main Service\MazikLogger\bin\Debug\MazikLogger.dll.config
+E:\Projects\Main Service\MazikLogger\bin\Debug\MazikLogger.dll
+E:\Projects\Main Service\MazikLogger\bin\Debug\MazikLogger.pdb
+E:\Projects\Main Service\MazikLogger\bin\Debug\Helper.dll
+E:\Projects\Main Service\MazikLogger\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\Projects\Main Service\MazikLogger\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Main Service\MazikLogger\bin\Debug\Helper.pdb
+E:\Projects\Main Service\MazikLogger\bin\Debug\Helper.dll.config
+E:\Projects\Main Service\MazikLogger\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\Projects\Main Service\MazikLogger\obj\Debug\MazikLogger.csprojAssemblyReference.cache
+E:\Projects\Main Service\MazikLogger\obj\Debug\MazikLogger.csproj.CopyComplete
+E:\Projects\Main Service\MazikLogger\obj\Debug\MazikLogger.dll
+E:\Projects\Main Service\MazikLogger\obj\Debug\MazikLogger.pdb

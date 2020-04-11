@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b491dfaa-c3dc-4cc6-a2c2-39f3bb456207" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://13.79.33.115/BizTalkRISADTA40/RISADTA40.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BizTalkServiceInstance.wsdl" MetadataType="Wsdl" ID="45df5ae2-b2d8-4819-94ed-df744e387e3c" SourceId="1" SourceUrl="http://azb-deviso-2.bupame.com/BizTalkRISADTA40/RISADTA40.svc?wsdl" />
+    <MetadataFile FileName="RISADTA40.xsd" MetadataType="Schema" ID="2fe15bdf-2f17-47d2-bf34-ddf67a07b23f" SourceId="1" SourceUrl="http://azb-deviso-2.bupame.com/BizTalkRISADTA40/RISADTA40.svc?xsd=xsd2" />
+    <MetadataFile FileName="RISADTA40.disco" MetadataType="Disco" ID="cef1b03a-957e-416e-80df-5012249bd5b7" SourceId="1" SourceUrl="http://azb-deviso-2.bupame.com/BizTalkRISADTA40/RISADTA40.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

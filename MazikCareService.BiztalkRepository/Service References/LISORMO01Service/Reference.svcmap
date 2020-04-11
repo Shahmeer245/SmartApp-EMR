@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5ccf89bb-71c3-452b-822a-5fc896497d2c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://13.79.33.115/BizTalkLISORMO01/BizTalkLISORMO01.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BizTalkLISORMO01.disco" MetadataType="Disco" ID="2fcb82ef-62cd-4695-9f78-9cc2daa022ec" SourceId="1" SourceUrl="http://azb-deviso-2.bupame.com/BizTalkLISORMO01/BizTalkLISORMO01.svc?disco" />
+    <MetadataFile FileName="BizTalkServiceInstance.wsdl" MetadataType="Wsdl" ID="d37ef9d3-05ac-49c8-8dcc-abd7e168f86e" SourceId="1" SourceUrl="http://azb-deviso-2.bupame.com/BizTalkLISORMO01/BizTalkLISORMO01.svc?wsdl" />
+    <MetadataFile FileName="BizTalkLISORMO01.xsd" MetadataType="Schema" ID="2d216ba2-9950-42f2-8b78-9cd8ee440d05" SourceId="1" SourceUrl="http://azb-deviso-2.bupame.com/BizTalkLISORMO01/BizTalkLISORMO01.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

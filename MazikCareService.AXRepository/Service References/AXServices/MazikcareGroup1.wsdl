@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MazikcareGroup" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_HMAppointmentSchedulingService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_HMAppointmentService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_HMCaseService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_HMCommon_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_HMDropDownService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_HMIntegrationService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_HMPatientService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_HMPatientVisitService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_HMResourceService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tempuri.org" location="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="NetTcpBinding_HMAppointmentSchedulingService" type="i0:HMAppointmentSchedulingService">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMAppointmentSchedulingService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="getUniqueValuesForField">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getUniqueValuesForField" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetUniqueValuesForFieldRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getUserAppointments">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getUserAppointments" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetUserAppointmentsRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetUserAppointmentsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetUserAppointmentsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTodaysAppointments">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getTodaysAppointments" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetTodaysAppointmentsRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetTodaysAppointmentsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetTodaysAppointmentsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAppointmentDetails">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getAppointmentDetails" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetAppointmentDetailsRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetAppointmentDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetAppointmentDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getClinicsList">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getClinicsList" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetClinicsListRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetClinicsListRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetClinicsListResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDashboardAppointments">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getDashboardAppointments" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetDashboardAppointmentsRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetDashboardAppointmentsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetDashboardAppointmentsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAppointmentsbyDate">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getAppointmentsbyDate" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetAppointmentsbyDateRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetAppointmentsbyDateRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetAppointmentsbyDateResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getFilteredAppointments">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getFilteredAppointments" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetFilteredAppointmentsRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetFilteredAppointmentsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetFilteredAppointmentsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getOpenAppointments">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getOpenAppointments" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetOpenAppointmentsRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetOpenAppointmentsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetOpenAppointmentsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isAppointmentProgressive">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/isAppointmentProgressive" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceIsAppointmentProgressiveRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceIsAppointmentProgressiveRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceIsAppointmentProgressiveResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateAppointmentNotes">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/updateAppointmentNotes" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceUpdateAppointmentNotesRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceUpdateAppointmentNotesRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceUpdateAppointmentNotesResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SetAppointmentStatus">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/SetAppointmentStatus" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceSetAppointmentStatusRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceSetAppointmentStatusRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceSetAppointmentStatusResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllAppointmentStatuses">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/getAllAppointmentStatuses" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceGetAllAppointmentStatusesRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateDispositionDetails">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentSchedulingService/updateDispositionDetails" style="document" />
+      <wsdl:input name="HMAppointmentSchedulingServiceUpdateDispositionDetailsRequest">
+        <soap12:header message="i0:HMAppointmentSchedulingServiceUpdateDispositionDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentSchedulingServiceUpdateDispositionDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_HMAppointmentService" type="i0:HMAppointmentService">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMAppointmentService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="addServiceInAppointment">
+      <soap12:operation soapAction="http://tempuri.org/HMAppointmentService/addServiceInAppointment" style="document" />
+      <wsdl:input name="HMAppointmentServiceAddServiceInAppointmentRequest">
+        <soap12:header message="i0:HMAppointmentServiceAddServiceInAppointmentRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMAppointmentServiceAddServiceInAppointmentResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_HMCaseService" type="i0:HMCaseService">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMCaseService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="createCaseTrans">
+      <soap12:operation soapAction="http://tempuri.org/HMCaseService/createCaseTrans" style="document" />
+      <wsdl:input name="HMCaseServiceCreateCaseTransRequest">
+        <soap12:header message="i0:HMCaseServiceCreateCaseTransRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCaseServiceCreateCaseTransResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="createCase">
+      <soap12:operation soapAction="http://tempuri.org/HMCaseService/createCase" style="document" />
+      <wsdl:input name="HMCaseServiceCreateCaseRequest">
+        <soap12:header message="i0:HMCaseServiceCreateCaseRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCaseServiceCreateCaseResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateCaseTransStatus">
+      <soap12:operation soapAction="http://tempuri.org/HMCaseService/updateCaseTransStatus" style="document" />
+      <wsdl:input name="HMCaseServiceUpdateCaseTransStatusRequest">
+        <soap12:header message="i0:HMCaseServiceUpdateCaseTransStatusRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCaseServiceUpdateCaseTransStatusResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateReportUrl">
+      <soap12:operation soapAction="http://tempuri.org/HMCaseService/updateReportUrl" style="document" />
+      <wsdl:input name="HMCaseServiceUpdateReportUrlRequest">
+        <soap12:header message="i0:HMCaseServiceUpdateReportUrlRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCaseServiceUpdateReportUrlResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCaseTransDetails">
+      <soap12:operation soapAction="http://tempuri.org/HMCaseService/getCaseTransDetails" style="document" />
+      <wsdl:input name="HMCaseServiceGetCaseTransDetailsRequest">
+        <soap12:header message="i0:HMCaseServiceGetCaseTransDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCaseServiceGetCaseTransDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateCaseStatus">
+      <soap12:operation soapAction="http://tempuri.org/HMCaseService/updateCaseStatus" style="document" />
+      <wsdl:input name="HMCaseServiceUpdateCaseStatusRequest">
+        <soap12:header message="i0:HMCaseServiceUpdateCaseStatusRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCaseServiceUpdateCaseStatusResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_HMCommon" type="i0:HMCommon">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMCommon_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="sendPatientSms">
+      <soap12:operation soapAction="http://tempuri.org/HMCommon/sendPatientSms" style="document" />
+      <wsdl:input name="HMCommonSendPatientSmsRequest">
+        <soap12:header message="i0:HMCommonSendPatientSmsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCommonSendPatientSmsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sendResourceSms">
+      <soap12:operation soapAction="http://tempuri.org/HMCommon/sendResourceSms" style="document" />
+      <wsdl:input name="HMCommonSendResourceSmsRequest">
+        <soap12:header message="i0:HMCommonSendResourceSmsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCommonSendResourceSmsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkItemInStock">
+      <soap12:operation soapAction="http://tempuri.org/HMCommon/checkItemInStock" style="document" />
+      <wsdl:input name="HMCommonCheckItemInStockRequest">
+        <soap12:header message="i0:HMCommonCheckItemInStockRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCommonCheckItemInStockResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentsBase64">
+      <soap12:operation soapAction="http://tempuri.org/HMCommon/getDocumentsBase64" style="document" />
+      <wsdl:input name="HMCommonGetDocumentsBase64Request">
+        <soap12:header message="i0:HMCommonGetDocumentsBase64Request_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMCommonGetDocumentsBase64Response">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_HMDropDownService" type="i0:HMDropDownService">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMDropDownService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="getDocumentTypes">
+      <soap12:operation soapAction="http://tempuri.org/HMDropDownService/getDocumentTypes" style="document" />
+      <wsdl:input name="HMDropDownServiceGetDocumentTypesRequest">
+        <soap12:header message="i0:HMDropDownServiceGetDocumentTypesRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMDropDownServiceGetDocumentTypesResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getActivityStatus">
+      <soap12:operation soapAction="http://tempuri.org/HMDropDownService/getActivityStatus" style="document" />
+      <wsdl:input name="HMDropDownServiceGetActivityStatusRequest">
+        <soap12:header message="i0:HMDropDownServiceGetActivityStatusRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMDropDownServiceGetActivityStatusResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getGender">
+      <soap12:operation soapAction="http://tempuri.org/HMDropDownService/getGender" style="document" />
+      <wsdl:input name="HMDropDownServiceGetGenderRequest">
+        <soap12:header message="i0:HMDropDownServiceGetGenderRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMDropDownServiceGetGenderResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSearchPatientFilter">
+      <soap12:operation soapAction="http://tempuri.org/HMDropDownService/getSearchPatientFilter" style="document" />
+      <wsdl:input name="HMDropDownServiceGetSearchPatientFilterRequest">
+        <soap12:header message="i0:HMDropDownServiceGetSearchPatientFilterRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMDropDownServiceGetSearchPatientFilterResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getNationalIdType">
+      <soap12:operation soapAction="http://tempuri.org/HMDropDownService/getNationalIdType" style="document" />
+      <wsdl:input name="HMDropDownServiceGetNationalIdTypeRequest">
+        <soap12:header message="i0:HMDropDownServiceGetNationalIdTypeRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMDropDownServiceGetNationalIdTypeResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_HMIntegrationService" type="i0:HMIntegrationService">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMIntegrationService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="updateLog">
+      <soap12:operation soapAction="http://tempuri.org/HMIntegrationService/updateLog" style="document" />
+      <wsdl:input name="HMIntegrationServiceUpdateLogRequest">
+        <soap12:header message="i0:HMIntegrationServiceUpdateLogRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMIntegrationServiceUpdateLogResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="createLog">
+      <soap12:operation soapAction="http://tempuri.org/HMIntegrationService/createLog" style="document" />
+      <wsdl:input name="HMIntegrationServiceCreateLogRequest">
+        <soap12:header message="i0:HMIntegrationServiceCreateLogRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMIntegrationServiceCreateLogResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_HMPatientService" type="i0:HMPatientService">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMPatientService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="createPatient">
+      <soap12:operation soapAction="http://tempuri.org/HMPatientService/createPatient" style="document" />
+      <wsdl:input name="HMPatientServiceCreatePatientRequest">
+        <soap12:header message="i0:HMPatientServiceCreatePatientRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMPatientServiceCreatePatientResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPatientBasicDetails">
+      <soap12:operation soapAction="http://tempuri.org/HMPatientService/getPatientBasicDetails" style="document" />
+      <wsdl:input name="HMPatientServiceGetPatientBasicDetailsRequest">
+        <soap12:header message="i0:HMPatientServiceGetPatientBasicDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMPatientServiceGetPatientBasicDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPatientImage">
+      <soap12:operation soapAction="http://tempuri.org/HMPatientService/getPatientImage" style="document" />
+      <wsdl:input name="HMPatientServiceGetPatientImageRequest">
+        <soap12:header message="i0:HMPatientServiceGetPatientImageRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMPatientServiceGetPatientImageResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPatientDetails">
+      <soap12:operation soapAction="http://tempuri.org/HMPatientService/getPatientDetails" style="document" />
+      <wsdl:input name="HMPatientServiceGetPatientDetailsRequest">
+        <soap12:header message="i0:HMPatientServiceGetPatientDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMPatientServiceGetPatientDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="searchPatientDetails">
+      <soap12:operation soapAction="http://tempuri.org/HMPatientService/searchPatientDetails" style="document" />
+      <wsdl:input name="HMPatientServiceSearchPatientDetailsRequest">
+        <soap12:header message="i0:HMPatientServiceSearchPatientDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMPatientServiceSearchPatientDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_HMPatientVisitService" type="i0:HMPatientVisitService">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMPatientVisitService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="updateVisitReason">
+      <soap12:operation soapAction="http://tempuri.org/HMPatientVisitService/updateVisitReason" style="document" />
+      <wsdl:input name="HMPatientVisitServiceUpdateVisitReasonRequest">
+        <soap12:header message="i0:HMPatientVisitServiceUpdateVisitReasonRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMPatientVisitServiceUpdateVisitReasonResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPatientVisit">
+      <soap12:operation soapAction="http://tempuri.org/HMPatientVisitService/getPatientVisit" style="document" />
+      <wsdl:input name="HMPatientVisitServiceGetPatientVisitRequest">
+        <soap12:header message="i0:HMPatientVisitServiceGetPatientVisitRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMPatientVisitServiceGetPatientVisitResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_HMResourceService" type="i0:HMResourceService">
+    <wsp:PolicyReference URI="#NetTcpBinding_HMResourceService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="getResourceClinicsList">
+      <soap12:operation soapAction="http://tempuri.org/HMResourceService/getResourceClinicsList" style="document" />
+      <wsdl:input name="HMResourceServiceGetResourceClinicsListRequest">
+        <soap12:header message="i0:HMResourceServiceGetResourceClinicsListRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMResourceServiceGetResourceClinicsListResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getResourceSpecialitiesList">
+      <soap12:operation soapAction="http://tempuri.org/HMResourceService/getResourceSpecialitiesList" style="document" />
+      <wsdl:input name="HMResourceServiceGetResourceSpecialitiesListRequest">
+        <soap12:header message="i0:HMResourceServiceGetResourceSpecialitiesListRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMResourceServiceGetResourceSpecialitiesListResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="verifyResourceSMSCode">
+      <soap12:operation soapAction="http://tempuri.org/HMResourceService/verifyResourceSMSCode" style="document" />
+      <wsdl:input name="HMResourceServiceVerifyResourceSMSCodeRequest">
+        <soap12:header message="i0:HMResourceServiceVerifyResourceSMSCodeRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMResourceServiceVerifyResourceSMSCodeResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getClinicsList">
+      <soap12:operation soapAction="http://tempuri.org/HMResourceService/getClinicsList" style="document" />
+      <wsdl:input name="HMResourceServiceGetClinicsListRequest">
+        <soap12:header message="i0:HMResourceServiceGetClinicsListRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMResourceServiceGetClinicsListResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getResourceList">
+      <soap12:operation soapAction="http://tempuri.org/HMResourceService/getResourceList" style="document" />
+      <wsdl:input name="HMResourceServiceGetResourceListRequest">
+        <soap12:header message="i0:HMResourceServiceGetResourceListRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMResourceServiceGetResourceListResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getResourceDetails">
+      <soap12:operation soapAction="http://tempuri.org/HMResourceService/getResourceDetails" style="document" />
+      <wsdl:input name="HMResourceServiceGetResourceDetailsRequest">
+        <soap12:header message="i0:HMResourceServiceGetResourceDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMResourceServiceGetResourceDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="generateResourceSMSCode">
+      <soap12:operation soapAction="http://tempuri.org/HMResourceService/generateResourceSMSCode" style="document" />
+      <wsdl:input name="HMResourceServiceGenerateResourceSMSCodeRequest">
+        <soap12:header message="i0:HMResourceServiceGenerateResourceSMSCodeRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMResourceServiceGenerateResourceSMSCodeResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getClinicDetails">
+      <soap12:operation soapAction="http://tempuri.org/HMResourceService/getClinicDetails" style="document" />
+      <wsdl:input name="HMResourceServiceGetClinicDetailsRequest">
+        <soap12:header message="i0:HMResourceServiceGetClinicDetailsRequest_Headers" part="context" use="literal" />
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="HMResourceServiceGetClinicDetailsResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AifFaultFault">
+        <soap12:fault use="literal" name="AifFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MazikcareGroup">
+    <wsdl:port name="NetTcpBinding_HMAppointmentSchedulingService" binding="tns:NetTcpBinding_HMAppointmentSchedulingService">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_HMAppointmentService" binding="tns:NetTcpBinding_HMAppointmentService">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_HMCaseService" binding="tns:NetTcpBinding_HMCaseService">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_HMCommon" binding="tns:NetTcpBinding_HMCommon">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_HMDropDownService" binding="tns:NetTcpBinding_HMDropDownService">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_HMIntegrationService" binding="tns:NetTcpBinding_HMIntegrationService">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_HMPatientService" binding="tns:NetTcpBinding_HMPatientService">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_HMPatientVisitService" binding="tns:NetTcpBinding_HMPatientVisitService">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_HMResourceService" binding="tns:NetTcpBinding_HMResourceService">
+      <soap12:address location="net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://dev-02:8201/DynamicsAx/Services/MazikcareGroup</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>administrator@crmmazik.com</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

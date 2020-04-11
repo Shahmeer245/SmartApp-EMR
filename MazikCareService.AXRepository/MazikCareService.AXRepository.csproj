@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7EB327F-F6F8-49C1-AA1C-FF15C77D83F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MazikCareService.AXRepository</RootNamespace>
+    <AssemblyName>MazikCareService.AXRepository</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppointmentRepository.cs" />
+    <Compile Include="CaseRepository.cs" />
+    <Compile Include="ClinicRepository.cs" />
+    <Compile Include="CommonRepository.cs" />
+    <Compile Include="DropDownRepository.cs" />
+    <Compile Include="IntegrationRepository.cs" />
+    <Compile Include="PatientRepository.cs" />
+    <Compile Include="PatientVisitRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceRepository.cs" />
+    <Compile Include="Service References\AXServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SoapHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AXServices\HMMazikCareGroup.wsdl" />
+    <None Include="Service References\AXServices\HMMazikCareGroup.xsd" />
+    <None Include="Service References\AXServices\HMMazikCareGroup1.wsdl" />
+    <None Include="Service References\AXServices\HMMazikCareGroup1.xsd" />
+    <None Include="Service References\AXServices\HMMazikCareGroup2.xsd" />
+    <None Include="Service References\AXServices\HMMazikCareGroup3.xsd" />
+    <None Include="Service References\AXServices\HMMazikCareGroup4.xsd" />
+    <None Include="Service References\AXServices\HMMazikCareGroup5.xsd" />
+    <None Include="Service References\AXServices\HMMazikCareGroup6.xsd" />
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.checkItemInStockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.createCaseInsuranceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.createCaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.createCaseTransResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.createInsuranceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.createLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.createPatientInsuranceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.createPatientResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getActivityStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getAppointmentDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getAppointmentsbyDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getCaseTransDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getClinicDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getClinicsListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getDocumentsBase64Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getDocumentTypesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getGenderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getNationalIdTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getOpenAppointmentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getPatientBasicDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getPatientVisitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getResourceClinicsListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getResourceDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getResourceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getResourceSpecialitiesListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getSearchPatientFilterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getTodaysAppointmentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.getUniqueValuesForFieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.HMAppointmentContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.HMCaseTransContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{078643eb-d0c9-48b3-8373-b112fdaca2f7}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MazikLogger\MazikLogger.csproj">
+      <Project>{B6900354-67A1-49CC-B1A8-5A9847EC51EC}</Project>
+      <Name>MazikLogger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AXServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AXServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AXServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.HMClinicDataContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.HMDropDownContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.HMPatientInfoContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.HMPatientVisitContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.HMResourceDataContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.HMSpecialityDataContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.Infolog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.isAppointmentProgressiveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.sendPatientSmsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.sendResourceSmsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.updateAppointmentNotesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.updateCaseStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.updateCaseTransStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.updateDispositionDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.updateLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.updateReportUrlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\MazikCareService.AXRepository.AXServices.updateVisitReasonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AXServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AXServices\HMMazikCareGroup.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

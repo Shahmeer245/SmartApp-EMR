@@ -1,0 +1,35 @@
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Cosmos.CRTCompat.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\MazikCareService.CosmosDB.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\MazikCareService.CosmosDB.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Helper.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.Azure.Documents.Client.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Newtonsoft.Json.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Helper.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Helper.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.Azure.Documents.Client.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Newtonsoft.Json.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.csprojAssemblyReference.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.csproj.CoreCompileInputs.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.csproj.CopyComplete
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.pdb
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Cosmos.CRTCompat.dll
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\MazikCareService.CosmosDB.dll
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\MazikCareService.CosmosDB.pdb
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Helper.dll
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.Azure.Documents.Client.dll
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Helper.pdb
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Helper.dll.config
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.Azure.Documents.Client.xml
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\Main Service\MazikCareService.CosmosDB\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\Projects\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.csprojAssemblyReference.cache
+E:\Projects\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.csproj.CopyComplete
+E:\Projects\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.dll
+E:\Projects\Main Service\MazikCareService.CosmosDB\obj\Debug\MazikCareService.CosmosDB.pdb

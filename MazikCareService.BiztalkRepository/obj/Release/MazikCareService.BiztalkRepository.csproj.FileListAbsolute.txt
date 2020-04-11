@@ -1,0 +1,6 @@
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\bin\Release\MazikCareService.BiztalkRepository.dll.config
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\bin\Release\MazikCareService.BiztalkRepository.dll
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\bin\Release\MazikCareService.BiztalkRepository.pdb
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\obj\Release\MazikCareService.BiztalkRepository.csprojAssemblyReference.cache
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\obj\Release\MazikCareService.BiztalkRepository.dll
+E:\Projects\Main Service\MazikCareService.BiztalkRepository\obj\Release\MazikCareService.BiztalkRepository.pdb

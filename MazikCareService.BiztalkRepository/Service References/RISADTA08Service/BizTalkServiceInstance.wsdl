@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://birch.bupa.com/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BizTalkServiceInstance" targetNamespace="http://birch.bupa.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <CreationInfo Created="2016-10-26 12:15:25Z" />
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://birch.bupa.com/Imports">
+      <xsd:import schemaLocation="http://azb-deviso-2.bupame.com:80/BizTalkRISADTA08/RISADTA08.svc?xsd=xsd2" namespace="http://BTAHL7Schemas.Api.GetPatient" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RISADTA08_UpdatePatientDetail_InputMessage">
+    <wsdl:part xmlns:q1="http://BTAHL7Schemas.Api.GetPatient" name="part" element="q1:GetPatient" />
+  </wsdl:message>
+  <wsdl:message name="RISADTA08_UpdatePatientDetail_OutputMessage" />
+  <wsdl:portType name="RISADTA08">
+    <wsdl:documentation />
+    <wsdl:operation name="UpdatePatientDetail">
+      <wsdl:documentation />
+      <wsdl:input message="tns:RISADTA08_UpdatePatientDetail_InputMessage" />
+      <wsdl:output message="tns:RISADTA08_UpdatePatientDetail_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITwoWayAsyncVoid" type="tns:RISADTA08">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdatePatientDetail">
+      <wsdl:documentation />
+      <soap:operation soapAction="UpdatePatientDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BizTalkServiceInstance">
+    <wsdl:port name="BasicHttpBinding_ITwoWayAsyncVoid" binding="tns:BasicHttpBinding_ITwoWayAsyncVoid">
+      <soap:address location="http://azb-deviso-2.bupame.com/BizTalkRISADTA08/RISADTA08.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{078643EB-D0C9-48B3-8373-B112FDACA2F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikCareService.LocalConnector", "MazikCareService.LocalConnector\MazikCareService.LocalConnector.csproj", "{289D27F3-50C9-4087-B296-3687E3687BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikCareService.AXRepository", "MazikCareService.AXRepository\MazikCareService.AXRepository.csproj", "{B7EB327F-F6F8-49C1-AA1C-FF15C77D83F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikCareService.CRMRepository", "MazikCareService.CRMRepository\MazikCareService.CRMRepository.csproj", "{C1B15ABC-E459-45E5-AF86-CC05EF30863E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikCareService.Core", "MazikCareService.Core\MazikCareService.Core.csproj", "{8B607C04-FB05-4556-9CCE-883865B3F081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikCareService", "MazikCareService\MazikCareService.csproj", "{C80CFDFE-8D3A-4104-BD49-06AC1D8769E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikCareWebApi", "MazikCareWebApi\MazikCareWebApi.csproj", "{A17FE075-2D10-4D97-82FB-DDA2E46ED6C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikLogger", "MazikLogger\MazikLogger.csproj", "{B6900354-67A1-49CC-B1A8-5A9847EC51EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikCareService.BiztalkRepository", "MazikCareService.BiztalkRepository\MazikCareService.BiztalkRepository.csproj", "{D05F2912-79CC-49B1-8192-1DBDA4A59A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazikCareService.CosmosDB", "MazikCareService.CosmosDB\MazikCareService.CosmosDB.csproj", "{8AEE7550-2A6D-4CCA-A056-2E2252F62108}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078643EB-D0C9-48B3-8373-B112FDACA2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078643EB-D0C9-48B3-8373-B112FDACA2F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078643EB-D0C9-48B3-8373-B112FDACA2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078643EB-D0C9-48B3-8373-B112FDACA2F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289D27F3-50C9-4087-B296-3687E3687BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289D27F3-50C9-4087-B296-3687E3687BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289D27F3-50C9-4087-B296-3687E3687BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289D27F3-50C9-4087-B296-3687E3687BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7EB327F-F6F8-49C1-AA1C-FF15C77D83F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7EB327F-F6F8-49C1-AA1C-FF15C77D83F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7EB327F-F6F8-49C1-AA1C-FF15C77D83F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7EB327F-F6F8-49C1-AA1C-FF15C77D83F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B15ABC-E459-45E5-AF86-CC05EF30863E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B15ABC-E459-45E5-AF86-CC05EF30863E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B15ABC-E459-45E5-AF86-CC05EF30863E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B15ABC-E459-45E5-AF86-CC05EF30863E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B607C04-FB05-4556-9CCE-883865B3F081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B607C04-FB05-4556-9CCE-883865B3F081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B607C04-FB05-4556-9CCE-883865B3F081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B607C04-FB05-4556-9CCE-883865B3F081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C80CFDFE-8D3A-4104-BD49-06AC1D8769E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80CFDFE-8D3A-4104-BD49-06AC1D8769E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80CFDFE-8D3A-4104-BD49-06AC1D8769E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80CFDFE-8D3A-4104-BD49-06AC1D8769E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17FE075-2D10-4D97-82FB-DDA2E46ED6C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17FE075-2D10-4D97-82FB-DDA2E46ED6C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17FE075-2D10-4D97-82FB-DDA2E46ED6C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17FE075-2D10-4D97-82FB-DDA2E46ED6C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6900354-67A1-49CC-B1A8-5A9847EC51EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6900354-67A1-49CC-B1A8-5A9847EC51EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6900354-67A1-49CC-B1A8-5A9847EC51EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6900354-67A1-49CC-B1A8-5A9847EC51EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05F2912-79CC-49B1-8192-1DBDA4A59A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05F2912-79CC-49B1-8192-1DBDA4A59A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05F2912-79CC-49B1-8192-1DBDA4A59A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05F2912-79CC-49B1-8192-1DBDA4A59A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AEE7550-2A6D-4CCA-A056-2E2252F62108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AEE7550-2A6D-4CCA-A056-2E2252F62108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AEE7550-2A6D-4CCA-A056-2E2252F62108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AEE7550-2A6D-4CCA-A056-2E2252F62108}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8358CC7-A3D4-4E1B-ABED-AD97B69E9FF3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mazikglobal-products.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MazikCareService.Core\\MazikCareService.Core.csproj
+		SccProjectName1 = MazikCareService.Core
+		SccLocalPath1 = MazikCareService.Core
+		SccProjectUniqueName2 = MazikCareWebApi\\MazikCareWebApi.csproj
+		SccProjectName2 = MazikCareWebApi
+		SccLocalPath2 = MazikCareWebApi
+		SccProjectUniqueName3 = MazikCareService.BiztalkRepository\\MazikCareService.BiztalkRepository.csproj
+		SccProjectName3 = MazikCareService.BiztalkRepository
+		SccLocalPath3 = MazikCareService.BiztalkRepository
+		SccProjectUniqueName4 = Helper\\Helper.csproj
+		SccProjectName4 = Helper
+		SccLocalPath4 = Helper
+		SccProjectUniqueName5 = MazikCareService.LocalConnector\\MazikCareService.LocalConnector.csproj
+		SccProjectName5 = MazikCareService.LocalConnector
+		SccLocalPath5 = MazikCareService.LocalConnector
+		SccProjectUniqueName6 = MazikCareService.AXRepository\\MazikCareService.AXRepository.csproj
+		SccProjectName6 = MazikCareService.AXRepository
+		SccLocalPath6 = MazikCareService.AXRepository
+		SccProjectUniqueName7 = MazikCareService.CRMRepository\\MazikCareService.CRMRepository.csproj
+		SccProjectName7 = MazikCareService.CRMRepository
+		SccLocalPath7 = MazikCareService.CRMRepository
+		SccProjectUniqueName8 = MazikCareService\\MazikCareService.csproj
+		SccProjectName8 = MazikCareService
+		SccLocalPath8 = MazikCareService
+		SccProjectUniqueName9 = MazikLogger\\MazikLogger.csproj
+		SccProjectName9 = MazikLogger
+		SccLocalPath9 = MazikLogger
+		SccProjectUniqueName10 = MazikCareService.CosmosDB\\MazikCareService.CosmosDB.csproj
+		SccProjectName10 = MazikCareService.CosmosDB
+		SccLocalPath10 = MazikCareService.CosmosDB
+	EndGlobalSection
+EndGlobal

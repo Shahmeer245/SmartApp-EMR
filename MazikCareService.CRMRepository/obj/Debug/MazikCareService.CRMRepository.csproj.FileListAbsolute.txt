@@ -1,0 +1,101 @@
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikCareService.CRMRepository.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikCareService.CRMRepository.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikCareService.CRMRepository.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Helper.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikLogger.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Data.Edm.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Client.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Core.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Edm.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Spatial.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Newtonsoft.Json.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\System.Net.Http.Extensions.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\System.Net.Http.Primitives.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Helper.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Helper.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikLogger.pdb
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikLogger.dll.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Data.Edm.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Client.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Core.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Edm.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Spatial.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\System.Net.Http.Extensions.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\System.Net.Http.Primitives.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.csproj.App.config
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.csprojAssemblyReference.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.csproj.CoreCompileInputs.cache
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.csproj.CopyComplete
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.dll
+D:\Sami\Code samples\Main Service\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.pdb
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikCareService.CRMRepository.dll.config
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikCareService.CRMRepository.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikCareService.CRMRepository.pdb
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Helper.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikLogger.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Data.Edm.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Client.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Core.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Edm.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Spatial.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Xrm.Sdk.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\System.Net.Http.Extensions.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\System.Net.Http.Primitives.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Helper.pdb
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Helper.dll.config
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikLogger.pdb
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\MazikLogger.dll.config
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Data.Edm.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Client.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Core.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.OData.Edm.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Spatial.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.Xrm.Sdk.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\System.Net.Http.Extensions.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\System.Net.Http.Primitives.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.csproj.App.config
+E:\Projects\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.csprojAssemblyReference.cache
+E:\Projects\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.csproj.CopyComplete
+E:\Projects\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.dll
+E:\Projects\Main Service\MazikCareService.CRMRepository\obj\Debug\MazikCareService.CRMRepository.pdb

@@ -1,0 +1,16 @@
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\MazikCareService.AXRepository.dll.config
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\MazikCareService.AXRepository.dll
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\MazikCareService.AXRepository.pdb
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\Helper.dll
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\MazikLogger.dll
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\Newtonsoft.Json.dll
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\Helper.pdb
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\Helper.dll.config
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\MazikLogger.pdb
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\MazikLogger.dll.config
+E:\Projects\Main Service\MazikCareService.AXRepository\bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\Projects\Main Service\MazikCareService.AXRepository\obj\Release\MazikCareService.AXRepository.csprojAssemblyReference.cache
+E:\Projects\Main Service\MazikCareService.AXRepository\obj\Release\MazikCareService.AXRepository.csproj.CopyComplete
+E:\Projects\Main Service\MazikCareService.AXRepository\obj\Release\MazikCareService.AXRepository.dll
+E:\Projects\Main Service\MazikCareService.AXRepository\obj\Release\MazikCareService.AXRepository.pdb

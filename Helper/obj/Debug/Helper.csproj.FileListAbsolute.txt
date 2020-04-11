@@ -1,0 +1,37 @@
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\Helper.dll.config
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\Helper.dll
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\Helper.pdb
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\Newtonsoft.Json.dll
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\System.Net.Http.Extensions.dll
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\System.Net.Http.Primitives.dll
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\System.Web.Cors.dll
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\System.Net.Http.Extensions.xml
+D:\Sami\Code samples\Main Service\Main Service\Helper\bin\Debug\System.Net.Http.Primitives.xml
+D:\Sami\Code samples\Main Service\Main Service\Helper\obj\Debug\Helper.csproj.App.config
+D:\Sami\Code samples\Main Service\Main Service\Helper\obj\Debug\Helper.csprojAssemblyReference.cache
+D:\Sami\Code samples\Main Service\Main Service\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+D:\Sami\Code samples\Main Service\Main Service\Helper\obj\Debug\Helper.csproj.CopyComplete
+D:\Sami\Code samples\Main Service\Main Service\Helper\obj\Debug\Helper.dll
+D:\Sami\Code samples\Main Service\Main Service\Helper\obj\Debug\Helper.pdb
+E:\Projects\Main Service\Helper\bin\Debug\Helper.dll.config
+E:\Projects\Main Service\Helper\bin\Debug\Helper.dll
+E:\Projects\Main Service\Helper\bin\Debug\Helper.pdb
+E:\Projects\Main Service\Helper\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+E:\Projects\Main Service\Helper\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+E:\Projects\Main Service\Helper\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Main Service\Helper\bin\Debug\System.Net.Http.Extensions.dll
+E:\Projects\Main Service\Helper\bin\Debug\System.Net.Http.Primitives.dll
+E:\Projects\Main Service\Helper\bin\Debug\System.Web.Cors.dll
+E:\Projects\Main Service\Helper\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+E:\Projects\Main Service\Helper\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+E:\Projects\Main Service\Helper\bin\Debug\System.Net.Http.Extensions.xml
+E:\Projects\Main Service\Helper\bin\Debug\System.Net.Http.Primitives.xml
+E:\Projects\Main Service\Helper\obj\Debug\Helper.csproj.App.config
+E:\Projects\Main Service\Helper\obj\Debug\Helper.csprojAssemblyReference.cache
+E:\Projects\Main Service\Helper\obj\Debug\Helper.csproj.CopyComplete
+E:\Projects\Main Service\Helper\obj\Debug\Helper.dll
+E:\Projects\Main Service\Helper\obj\Debug\Helper.pdb

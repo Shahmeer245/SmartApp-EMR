@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd4" namespace="http://tempuri.org" />
+      <xsd:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd5" namespace="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" />
+      <xsd:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd6" namespace="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" />
+      <xsd:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/Dynamics.Ax.Application" />
+      <xsd:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://dev-02:8101/DynamicsAx/Services/MazikcareGroup?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.Framework.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetUniqueValuesForFieldRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldRequest_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetUniqueValuesForFieldResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getUniqueValuesForField_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q2:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetUserAppointmentsRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetUserAppointmentsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetUserAppointmentsRequest_Headers">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q3:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetUserAppointmentsResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetUserAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getUserAppointments_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q4:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetTodaysAppointmentsRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetTodaysAppointmentsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetTodaysAppointmentsRequest_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q5:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetTodaysAppointmentsResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetTodaysAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getTodaysAppointments_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q6:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAppointmentDetailsRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetAppointmentDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAppointmentDetailsRequest_Headers">
+    <wsdl:part xmlns:q7="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q7:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAppointmentDetailsResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetAppointmentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getAppointmentDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q8:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetClinicsListRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetClinicsListRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetClinicsListRequest_Headers">
+    <wsdl:part xmlns:q9="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q9:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetClinicsListResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetClinicsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getClinicsList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q10:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetDashboardAppointmentsRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetDashboardAppointmentsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetDashboardAppointmentsRequest_Headers">
+    <wsdl:part xmlns:q11="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q11:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetDashboardAppointmentsResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetDashboardAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getDashboardAppointments_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q12:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAppointmentsbyDateRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetAppointmentsbyDateRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAppointmentsbyDateRequest_Headers">
+    <wsdl:part xmlns:q13="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q13:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAppointmentsbyDateResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetAppointmentsbyDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getAppointmentsbyDate_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q14:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetFilteredAppointmentsRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetFilteredAppointmentsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetFilteredAppointmentsRequest_Headers">
+    <wsdl:part xmlns:q15="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q15:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetFilteredAppointmentsResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetFilteredAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getFilteredAppointments_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q16:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetOpenAppointmentsRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetOpenAppointmentsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetOpenAppointmentsRequest_Headers">
+    <wsdl:part xmlns:q17="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q17:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetOpenAppointmentsResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetOpenAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getOpenAppointments_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q18:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceIsAppointmentProgressiveRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceIsAppointmentProgressiveRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceIsAppointmentProgressiveRequest_Headers">
+    <wsdl:part xmlns:q19="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q19:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceIsAppointmentProgressiveResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceIsAppointmentProgressiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_isAppointmentProgressive_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q20:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceUpdateAppointmentNotesRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceUpdateAppointmentNotesRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceUpdateAppointmentNotesRequest_Headers">
+    <wsdl:part xmlns:q21="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q21:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceUpdateAppointmentNotesResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceUpdateAppointmentNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_updateAppointmentNotes_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q22:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceSetAppointmentStatusRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceSetAppointmentStatusRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceSetAppointmentStatusRequest_Headers">
+    <wsdl:part xmlns:q23="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q23:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceSetAppointmentStatusResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceSetAppointmentStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_SetAppointmentStatus_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q24:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetAllAppointmentStatusesRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesRequest_Headers">
+    <wsdl:part xmlns:q25="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q25:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceGetAllAppointmentStatusesResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_getAllAppointmentStatuses_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q26:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceUpdateDispositionDetailsRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceUpdateDispositionDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceUpdateDispositionDetailsRequest_Headers">
+    <wsdl:part xmlns:q27="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q27:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingServiceUpdateDispositionDetailsResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentSchedulingServiceUpdateDispositionDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentSchedulingService_updateDispositionDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q28:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentServiceAddServiceInAppointmentRequest">
+    <wsdl:part name="parameters" element="tns:HMAppointmentServiceAddServiceInAppointmentRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentServiceAddServiceInAppointmentRequest_Headers">
+    <wsdl:part xmlns:q29="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q29:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentServiceAddServiceInAppointmentResponse">
+    <wsdl:part name="parameters" element="tns:HMAppointmentServiceAddServiceInAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMAppointmentService_addServiceInAppointment_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q30:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceCreateCaseTransRequest">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceCreateCaseTransRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceCreateCaseTransRequest_Headers">
+    <wsdl:part xmlns:q31="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q31:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceCreateCaseTransResponse">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceCreateCaseTransResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseService_createCaseTrans_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q32:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceCreateCaseRequest">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceCreateCaseRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceCreateCaseRequest_Headers">
+    <wsdl:part xmlns:q33="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q33:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceCreateCaseResponse">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceCreateCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseService_createCase_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q34:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateCaseTransStatusRequest">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceUpdateCaseTransStatusRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateCaseTransStatusRequest_Headers">
+    <wsdl:part xmlns:q35="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q35:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateCaseTransStatusResponse">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceUpdateCaseTransStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseService_updateCaseTransStatus_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q36:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateReportUrlRequest">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceUpdateReportUrlRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateReportUrlRequest_Headers">
+    <wsdl:part xmlns:q37="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q37:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateReportUrlResponse">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceUpdateReportUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseService_updateReportUrl_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q38="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q38:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceGetCaseTransDetailsRequest">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceGetCaseTransDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceGetCaseTransDetailsRequest_Headers">
+    <wsdl:part xmlns:q39="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q39:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceGetCaseTransDetailsResponse">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceGetCaseTransDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseService_getCaseTransDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q40="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q40:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateCaseStatusRequest">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceUpdateCaseStatusRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateCaseStatusRequest_Headers">
+    <wsdl:part xmlns:q41="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q41:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseServiceUpdateCaseStatusResponse">
+    <wsdl:part name="parameters" element="tns:HMCaseServiceUpdateCaseStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCaseService_updateCaseStatus_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q42:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonSendPatientSmsRequest">
+    <wsdl:part name="parameters" element="tns:HMCommonSendPatientSmsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonSendPatientSmsRequest_Headers">
+    <wsdl:part xmlns:q43="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q43:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonSendPatientSmsResponse">
+    <wsdl:part name="parameters" element="tns:HMCommonSendPatientSmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCommon_sendPatientSms_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q44="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q44:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonSendResourceSmsRequest">
+    <wsdl:part name="parameters" element="tns:HMCommonSendResourceSmsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonSendResourceSmsRequest_Headers">
+    <wsdl:part xmlns:q45="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q45:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonSendResourceSmsResponse">
+    <wsdl:part name="parameters" element="tns:HMCommonSendResourceSmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCommon_sendResourceSms_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q46="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q46:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonCheckItemInStockRequest">
+    <wsdl:part name="parameters" element="tns:HMCommonCheckItemInStockRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonCheckItemInStockRequest_Headers">
+    <wsdl:part xmlns:q47="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q47:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonCheckItemInStockResponse">
+    <wsdl:part name="parameters" element="tns:HMCommonCheckItemInStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMCommon_checkItemInStock_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q48:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonGetDocumentsBase64Request">
+    <wsdl:part name="parameters" element="tns:HMCommonGetDocumentsBase64Request" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonGetDocumentsBase64Request_Headers">
+    <wsdl:part xmlns:q49="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q49:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMCommonGetDocumentsBase64Response">
+    <wsdl:part name="parameters" element="tns:HMCommonGetDocumentsBase64Response" />
+  </wsdl:message>
+  <wsdl:message name="HMCommon_getDocumentsBase64_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q50="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q50:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetDocumentTypesRequest">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetDocumentTypesRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetDocumentTypesRequest_Headers">
+    <wsdl:part xmlns:q51="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q51:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetDocumentTypesResponse">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetDocumentTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownService_getDocumentTypes_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q52="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q52:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetActivityStatusRequest">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetActivityStatusRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetActivityStatusRequest_Headers">
+    <wsdl:part xmlns:q53="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q53:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetActivityStatusResponse">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetActivityStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownService_getActivityStatus_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q54:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetGenderRequest">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetGenderRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetGenderRequest_Headers">
+    <wsdl:part xmlns:q55="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q55:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetGenderResponse">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetGenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownService_getGender_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q56="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q56:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetSearchPatientFilterRequest">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetSearchPatientFilterRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetSearchPatientFilterRequest_Headers">
+    <wsdl:part xmlns:q57="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q57:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetSearchPatientFilterResponse">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetSearchPatientFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownService_getSearchPatientFilter_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q58="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q58:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetNationalIdTypeRequest">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetNationalIdTypeRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetNationalIdTypeRequest_Headers">
+    <wsdl:part xmlns:q59="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q59:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownServiceGetNationalIdTypeResponse">
+    <wsdl:part name="parameters" element="tns:HMDropDownServiceGetNationalIdTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMDropDownService_getNationalIdType_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q60:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMIntegrationServiceUpdateLogRequest">
+    <wsdl:part name="parameters" element="tns:HMIntegrationServiceUpdateLogRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMIntegrationServiceUpdateLogRequest_Headers">
+    <wsdl:part xmlns:q61="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q61:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMIntegrationServiceUpdateLogResponse">
+    <wsdl:part name="parameters" element="tns:HMIntegrationServiceUpdateLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMIntegrationService_updateLog_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q62="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q62:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMIntegrationServiceCreateLogRequest">
+    <wsdl:part name="parameters" element="tns:HMIntegrationServiceCreateLogRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMIntegrationServiceCreateLogRequest_Headers">
+    <wsdl:part xmlns:q63="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q63:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMIntegrationServiceCreateLogResponse">
+    <wsdl:part name="parameters" element="tns:HMIntegrationServiceCreateLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMIntegrationService_createLog_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q64="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q64:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceCreatePatientRequest">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceCreatePatientRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceCreatePatientRequest_Headers">
+    <wsdl:part xmlns:q65="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q65:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceCreatePatientResponse">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceCreatePatientResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientService_createPatient_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q66="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q66:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientBasicDetailsRequest">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceGetPatientBasicDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientBasicDetailsRequest_Headers">
+    <wsdl:part xmlns:q67="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q67:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientBasicDetailsResponse">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceGetPatientBasicDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientService_getPatientBasicDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q68="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q68:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientImageRequest">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceGetPatientImageRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientImageRequest_Headers">
+    <wsdl:part xmlns:q69="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q69:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientImageResponse">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceGetPatientImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientService_getPatientImage_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q70="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q70:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientDetailsRequest">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceGetPatientDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientDetailsRequest_Headers">
+    <wsdl:part xmlns:q71="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q71:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceGetPatientDetailsResponse">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceGetPatientDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientService_getPatientDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q72="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q72:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceSearchPatientDetailsRequest">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceSearchPatientDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceSearchPatientDetailsRequest_Headers">
+    <wsdl:part xmlns:q73="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q73:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientServiceSearchPatientDetailsResponse">
+    <wsdl:part name="parameters" element="tns:HMPatientServiceSearchPatientDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientService_searchPatientDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q74="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q74:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientVisitServiceUpdateVisitReasonRequest">
+    <wsdl:part name="parameters" element="tns:HMPatientVisitServiceUpdateVisitReasonRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientVisitServiceUpdateVisitReasonRequest_Headers">
+    <wsdl:part xmlns:q75="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q75:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientVisitServiceUpdateVisitReasonResponse">
+    <wsdl:part name="parameters" element="tns:HMPatientVisitServiceUpdateVisitReasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientVisitService_updateVisitReason_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q76="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q76:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientVisitServiceGetPatientVisitRequest">
+    <wsdl:part name="parameters" element="tns:HMPatientVisitServiceGetPatientVisitRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientVisitServiceGetPatientVisitRequest_Headers">
+    <wsdl:part xmlns:q77="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q77:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientVisitServiceGetPatientVisitResponse">
+    <wsdl:part name="parameters" element="tns:HMPatientVisitServiceGetPatientVisitResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMPatientVisitService_getPatientVisit_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q78="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q78:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceClinicsListRequest">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetResourceClinicsListRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceClinicsListRequest_Headers">
+    <wsdl:part xmlns:q79="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q79:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceClinicsListResponse">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetResourceClinicsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceService_getResourceClinicsList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q80="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q80:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceSpecialitiesListRequest">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetResourceSpecialitiesListRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceSpecialitiesListRequest_Headers">
+    <wsdl:part xmlns:q81="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q81:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceSpecialitiesListResponse">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetResourceSpecialitiesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceService_getResourceSpecialitiesList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q82="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q82:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceVerifyResourceSMSCodeRequest">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceVerifyResourceSMSCodeRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceVerifyResourceSMSCodeRequest_Headers">
+    <wsdl:part xmlns:q83="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q83:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceVerifyResourceSMSCodeResponse">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceVerifyResourceSMSCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceService_verifyResourceSMSCode_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q84="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q84:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetClinicsListRequest">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetClinicsListRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetClinicsListRequest_Headers">
+    <wsdl:part xmlns:q85="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q85:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetClinicsListResponse">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetClinicsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceService_getClinicsList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q86="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q86:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceListRequest">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetResourceListRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceListRequest_Headers">
+    <wsdl:part xmlns:q87="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q87:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceListResponse">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetResourceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceService_getResourceList_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q88="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q88:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceDetailsRequest">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetResourceDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceDetailsRequest_Headers">
+    <wsdl:part xmlns:q89="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q89:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetResourceDetailsResponse">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetResourceDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceService_getResourceDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q90="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q90:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGenerateResourceSMSCodeRequest">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGenerateResourceSMSCodeRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGenerateResourceSMSCodeRequest_Headers">
+    <wsdl:part xmlns:q91="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q91:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGenerateResourceSMSCodeResponse">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGenerateResourceSMSCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceService_generateResourceSMSCode_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q92="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q92:AifFault" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetClinicDetailsRequest">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetClinicDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetClinicDetailsRequest_Headers">
+    <wsdl:part xmlns:q93="http://schemas.microsoft.com/dynamics/2010/01/datacontracts" name="context" element="q93:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceServiceGetClinicDetailsResponse">
+    <wsdl:part name="parameters" element="tns:HMResourceServiceGetClinicDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="HMResourceService_getClinicDetails_AifFaultFault_FaultMessage">
+    <wsdl:part xmlns:q94="http://schemas.microsoft.com/dynamics/2008/01/documents/Fault" name="detail" element="q94:AifFault" />
+  </wsdl:message>
+  <wsdl:portType name="HMAppointmentSchedulingService">
+    <wsdl:operation name="getUniqueValuesForField">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getUniqueValuesForField" name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldRequest" message="tns:HMAppointmentSchedulingServiceGetUniqueValuesForFieldRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getUniqueValuesForFieldResponse" name="HMAppointmentSchedulingServiceGetUniqueValuesForFieldResponse" message="tns:HMAppointmentSchedulingServiceGetUniqueValuesForFieldResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getUniqueValuesForFieldAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getUniqueValuesForField_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserAppointments">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getUserAppointments" name="HMAppointmentSchedulingServiceGetUserAppointmentsRequest" message="tns:HMAppointmentSchedulingServiceGetUserAppointmentsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getUserAppointmentsResponse" name="HMAppointmentSchedulingServiceGetUserAppointmentsResponse" message="tns:HMAppointmentSchedulingServiceGetUserAppointmentsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getUserAppointmentsAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getUserAppointments_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTodaysAppointments">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getTodaysAppointments" name="HMAppointmentSchedulingServiceGetTodaysAppointmentsRequest" message="tns:HMAppointmentSchedulingServiceGetTodaysAppointmentsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getTodaysAppointmentsResponse" name="HMAppointmentSchedulingServiceGetTodaysAppointmentsResponse" message="tns:HMAppointmentSchedulingServiceGetTodaysAppointmentsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getTodaysAppointmentsAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getTodaysAppointments_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAppointmentDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAppointmentDetails" name="HMAppointmentSchedulingServiceGetAppointmentDetailsRequest" message="tns:HMAppointmentSchedulingServiceGetAppointmentDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAppointmentDetailsResponse" name="HMAppointmentSchedulingServiceGetAppointmentDetailsResponse" message="tns:HMAppointmentSchedulingServiceGetAppointmentDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAppointmentDetailsAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getAppointmentDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getClinicsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getClinicsList" name="HMAppointmentSchedulingServiceGetClinicsListRequest" message="tns:HMAppointmentSchedulingServiceGetClinicsListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getClinicsListResponse" name="HMAppointmentSchedulingServiceGetClinicsListResponse" message="tns:HMAppointmentSchedulingServiceGetClinicsListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getClinicsListAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getClinicsList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDashboardAppointments">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getDashboardAppointments" name="HMAppointmentSchedulingServiceGetDashboardAppointmentsRequest" message="tns:HMAppointmentSchedulingServiceGetDashboardAppointmentsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getDashboardAppointmentsResponse" name="HMAppointmentSchedulingServiceGetDashboardAppointmentsResponse" message="tns:HMAppointmentSchedulingServiceGetDashboardAppointmentsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getDashboardAppointmentsAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getDashboardAppointments_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAppointmentsbyDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAppointmentsbyDate" name="HMAppointmentSchedulingServiceGetAppointmentsbyDateRequest" message="tns:HMAppointmentSchedulingServiceGetAppointmentsbyDateRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAppointmentsbyDateResponse" name="HMAppointmentSchedulingServiceGetAppointmentsbyDateResponse" message="tns:HMAppointmentSchedulingServiceGetAppointmentsbyDateResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAppointmentsbyDateAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getAppointmentsbyDate_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getFilteredAppointments">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getFilteredAppointments" name="HMAppointmentSchedulingServiceGetFilteredAppointmentsRequest" message="tns:HMAppointmentSchedulingServiceGetFilteredAppointmentsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getFilteredAppointmentsResponse" name="HMAppointmentSchedulingServiceGetFilteredAppointmentsResponse" message="tns:HMAppointmentSchedulingServiceGetFilteredAppointmentsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getFilteredAppointmentsAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getFilteredAppointments_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getOpenAppointments">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getOpenAppointments" name="HMAppointmentSchedulingServiceGetOpenAppointmentsRequest" message="tns:HMAppointmentSchedulingServiceGetOpenAppointmentsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getOpenAppointmentsResponse" name="HMAppointmentSchedulingServiceGetOpenAppointmentsResponse" message="tns:HMAppointmentSchedulingServiceGetOpenAppointmentsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getOpenAppointmentsAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getOpenAppointments_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isAppointmentProgressive">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/isAppointmentProgressive" name="HMAppointmentSchedulingServiceIsAppointmentProgressiveRequest" message="tns:HMAppointmentSchedulingServiceIsAppointmentProgressiveRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/isAppointmentProgressiveResponse" name="HMAppointmentSchedulingServiceIsAppointmentProgressiveResponse" message="tns:HMAppointmentSchedulingServiceIsAppointmentProgressiveResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/isAppointmentProgressiveAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_isAppointmentProgressive_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAppointmentNotes">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/updateAppointmentNotes" name="HMAppointmentSchedulingServiceUpdateAppointmentNotesRequest" message="tns:HMAppointmentSchedulingServiceUpdateAppointmentNotesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/updateAppointmentNotesResponse" name="HMAppointmentSchedulingServiceUpdateAppointmentNotesResponse" message="tns:HMAppointmentSchedulingServiceUpdateAppointmentNotesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/updateAppointmentNotesAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_updateAppointmentNotes_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAppointmentStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/SetAppointmentStatus" name="HMAppointmentSchedulingServiceSetAppointmentStatusRequest" message="tns:HMAppointmentSchedulingServiceSetAppointmentStatusRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/SetAppointmentStatusResponse" name="HMAppointmentSchedulingServiceSetAppointmentStatusResponse" message="tns:HMAppointmentSchedulingServiceSetAppointmentStatusResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/SetAppointmentStatusAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_SetAppointmentStatus_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllAppointmentStatuses">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAllAppointmentStatuses" name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesRequest" message="tns:HMAppointmentSchedulingServiceGetAllAppointmentStatusesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAllAppointmentStatusesResponse" name="HMAppointmentSchedulingServiceGetAllAppointmentStatusesResponse" message="tns:HMAppointmentSchedulingServiceGetAllAppointmentStatusesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/getAllAppointmentStatusesAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_getAllAppointmentStatuses_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDispositionDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/updateDispositionDetails" name="HMAppointmentSchedulingServiceUpdateDispositionDetailsRequest" message="tns:HMAppointmentSchedulingServiceUpdateDispositionDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/updateDispositionDetailsResponse" name="HMAppointmentSchedulingServiceUpdateDispositionDetailsResponse" message="tns:HMAppointmentSchedulingServiceUpdateDispositionDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentSchedulingService/updateDispositionDetailsAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentSchedulingService_updateDispositionDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HMAppointmentService">
+    <wsdl:operation name="addServiceInAppointment">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMAppointmentService/addServiceInAppointment" name="HMAppointmentServiceAddServiceInAppointmentRequest" message="tns:HMAppointmentServiceAddServiceInAppointmentRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMAppointmentService/addServiceInAppointmentResponse" name="HMAppointmentServiceAddServiceInAppointmentResponse" message="tns:HMAppointmentServiceAddServiceInAppointmentResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMAppointmentService/addServiceInAppointmentAifFaultFault" name="AifFaultFault" message="tns:HMAppointmentService_addServiceInAppointment_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HMCaseService">
+    <wsdl:operation name="createCaseTrans">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCaseService/createCaseTrans" name="HMCaseServiceCreateCaseTransRequest" message="tns:HMCaseServiceCreateCaseTransRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCaseService/createCaseTransResponse" name="HMCaseServiceCreateCaseTransResponse" message="tns:HMCaseServiceCreateCaseTransResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCaseService/createCaseTransAifFaultFault" name="AifFaultFault" message="tns:HMCaseService_createCaseTrans_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createCase">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCaseService/createCase" name="HMCaseServiceCreateCaseRequest" message="tns:HMCaseServiceCreateCaseRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCaseService/createCaseResponse" name="HMCaseServiceCreateCaseResponse" message="tns:HMCaseServiceCreateCaseResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCaseService/createCaseAifFaultFault" name="AifFaultFault" message="tns:HMCaseService_createCase_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCaseTransStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCaseService/updateCaseTransStatus" name="HMCaseServiceUpdateCaseTransStatusRequest" message="tns:HMCaseServiceUpdateCaseTransStatusRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCaseService/updateCaseTransStatusResponse" name="HMCaseServiceUpdateCaseTransStatusResponse" message="tns:HMCaseServiceUpdateCaseTransStatusResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCaseService/updateCaseTransStatusAifFaultFault" name="AifFaultFault" message="tns:HMCaseService_updateCaseTransStatus_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateReportUrl">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCaseService/updateReportUrl" name="HMCaseServiceUpdateReportUrlRequest" message="tns:HMCaseServiceUpdateReportUrlRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCaseService/updateReportUrlResponse" name="HMCaseServiceUpdateReportUrlResponse" message="tns:HMCaseServiceUpdateReportUrlResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCaseService/updateReportUrlAifFaultFault" name="AifFaultFault" message="tns:HMCaseService_updateReportUrl_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCaseTransDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCaseService/getCaseTransDetails" name="HMCaseServiceGetCaseTransDetailsRequest" message="tns:HMCaseServiceGetCaseTransDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCaseService/getCaseTransDetailsResponse" name="HMCaseServiceGetCaseTransDetailsResponse" message="tns:HMCaseServiceGetCaseTransDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCaseService/getCaseTransDetailsAifFaultFault" name="AifFaultFault" message="tns:HMCaseService_getCaseTransDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCaseStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCaseService/updateCaseStatus" name="HMCaseServiceUpdateCaseStatusRequest" message="tns:HMCaseServiceUpdateCaseStatusRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCaseService/updateCaseStatusResponse" name="HMCaseServiceUpdateCaseStatusResponse" message="tns:HMCaseServiceUpdateCaseStatusResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCaseService/updateCaseStatusAifFaultFault" name="AifFaultFault" message="tns:HMCaseService_updateCaseStatus_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HMCommon">
+    <wsdl:operation name="sendPatientSms">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCommon/sendPatientSms" name="HMCommonSendPatientSmsRequest" message="tns:HMCommonSendPatientSmsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCommon/sendPatientSmsResponse" name="HMCommonSendPatientSmsResponse" message="tns:HMCommonSendPatientSmsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCommon/sendPatientSmsAifFaultFault" name="AifFaultFault" message="tns:HMCommon_sendPatientSms_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendResourceSms">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCommon/sendResourceSms" name="HMCommonSendResourceSmsRequest" message="tns:HMCommonSendResourceSmsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCommon/sendResourceSmsResponse" name="HMCommonSendResourceSmsResponse" message="tns:HMCommonSendResourceSmsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCommon/sendResourceSmsAifFaultFault" name="AifFaultFault" message="tns:HMCommon_sendResourceSms_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkItemInStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCommon/checkItemInStock" name="HMCommonCheckItemInStockRequest" message="tns:HMCommonCheckItemInStockRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCommon/checkItemInStockResponse" name="HMCommonCheckItemInStockResponse" message="tns:HMCommonCheckItemInStockResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCommon/checkItemInStockAifFaultFault" name="AifFaultFault" message="tns:HMCommon_checkItemInStock_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentsBase64">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMCommon/getDocumentsBase64" name="HMCommonGetDocumentsBase64Request" message="tns:HMCommonGetDocumentsBase64Request" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMCommon/getDocumentsBase64Response" name="HMCommonGetDocumentsBase64Response" message="tns:HMCommonGetDocumentsBase64Response" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMCommon/getDocumentsBase64AifFaultFault" name="AifFaultFault" message="tns:HMCommon_getDocumentsBase64_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HMDropDownService">
+    <wsdl:operation name="getDocumentTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMDropDownService/getDocumentTypes" name="HMDropDownServiceGetDocumentTypesRequest" message="tns:HMDropDownServiceGetDocumentTypesRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMDropDownService/getDocumentTypesResponse" name="HMDropDownServiceGetDocumentTypesResponse" message="tns:HMDropDownServiceGetDocumentTypesResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMDropDownService/getDocumentTypesAifFaultFault" name="AifFaultFault" message="tns:HMDropDownService_getDocumentTypes_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getActivityStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMDropDownService/getActivityStatus" name="HMDropDownServiceGetActivityStatusRequest" message="tns:HMDropDownServiceGetActivityStatusRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMDropDownService/getActivityStatusResponse" name="HMDropDownServiceGetActivityStatusResponse" message="tns:HMDropDownServiceGetActivityStatusResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMDropDownService/getActivityStatusAifFaultFault" name="AifFaultFault" message="tns:HMDropDownService_getActivityStatus_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getGender">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMDropDownService/getGender" name="HMDropDownServiceGetGenderRequest" message="tns:HMDropDownServiceGetGenderRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMDropDownService/getGenderResponse" name="HMDropDownServiceGetGenderResponse" message="tns:HMDropDownServiceGetGenderResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMDropDownService/getGenderAifFaultFault" name="AifFaultFault" message="tns:HMDropDownService_getGender_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSearchPatientFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMDropDownService/getSearchPatientFilter" name="HMDropDownServiceGetSearchPatientFilterRequest" message="tns:HMDropDownServiceGetSearchPatientFilterRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMDropDownService/getSearchPatientFilterResponse" name="HMDropDownServiceGetSearchPatientFilterResponse" message="tns:HMDropDownServiceGetSearchPatientFilterResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMDropDownService/getSearchPatientFilterAifFaultFault" name="AifFaultFault" message="tns:HMDropDownService_getSearchPatientFilter_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getNationalIdType">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMDropDownService/getNationalIdType" name="HMDropDownServiceGetNationalIdTypeRequest" message="tns:HMDropDownServiceGetNationalIdTypeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMDropDownService/getNationalIdTypeResponse" name="HMDropDownServiceGetNationalIdTypeResponse" message="tns:HMDropDownServiceGetNationalIdTypeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMDropDownService/getNationalIdTypeAifFaultFault" name="AifFaultFault" message="tns:HMDropDownService_getNationalIdType_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HMIntegrationService">
+    <wsdl:operation name="updateLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMIntegrationService/updateLog" name="HMIntegrationServiceUpdateLogRequest" message="tns:HMIntegrationServiceUpdateLogRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMIntegrationService/updateLogResponse" name="HMIntegrationServiceUpdateLogResponse" message="tns:HMIntegrationServiceUpdateLogResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMIntegrationService/updateLogAifFaultFault" name="AifFaultFault" message="tns:HMIntegrationService_updateLog_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMIntegrationService/createLog" name="HMIntegrationServiceCreateLogRequest" message="tns:HMIntegrationServiceCreateLogRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMIntegrationService/createLogResponse" name="HMIntegrationServiceCreateLogResponse" message="tns:HMIntegrationServiceCreateLogResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMIntegrationService/createLogAifFaultFault" name="AifFaultFault" message="tns:HMIntegrationService_createLog_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HMPatientService">
+    <wsdl:operation name="createPatient">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMPatientService/createPatient" name="HMPatientServiceCreatePatientRequest" message="tns:HMPatientServiceCreatePatientRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMPatientService/createPatientResponse" name="HMPatientServiceCreatePatientResponse" message="tns:HMPatientServiceCreatePatientResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMPatientService/createPatientAifFaultFault" name="AifFaultFault" message="tns:HMPatientService_createPatient_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPatientBasicDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMPatientService/getPatientBasicDetails" name="HMPatientServiceGetPatientBasicDetailsRequest" message="tns:HMPatientServiceGetPatientBasicDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMPatientService/getPatientBasicDetailsResponse" name="HMPatientServiceGetPatientBasicDetailsResponse" message="tns:HMPatientServiceGetPatientBasicDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMPatientService/getPatientBasicDetailsAifFaultFault" name="AifFaultFault" message="tns:HMPatientService_getPatientBasicDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPatientImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMPatientService/getPatientImage" name="HMPatientServiceGetPatientImageRequest" message="tns:HMPatientServiceGetPatientImageRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMPatientService/getPatientImageResponse" name="HMPatientServiceGetPatientImageResponse" message="tns:HMPatientServiceGetPatientImageResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMPatientService/getPatientImageAifFaultFault" name="AifFaultFault" message="tns:HMPatientService_getPatientImage_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPatientDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMPatientService/getPatientDetails" name="HMPatientServiceGetPatientDetailsRequest" message="tns:HMPatientServiceGetPatientDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMPatientService/getPatientDetailsResponse" name="HMPatientServiceGetPatientDetailsResponse" message="tns:HMPatientServiceGetPatientDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMPatientService/getPatientDetailsAifFaultFault" name="AifFaultFault" message="tns:HMPatientService_getPatientDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchPatientDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMPatientService/searchPatientDetails" name="HMPatientServiceSearchPatientDetailsRequest" message="tns:HMPatientServiceSearchPatientDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMPatientService/searchPatientDetailsResponse" name="HMPatientServiceSearchPatientDetailsResponse" message="tns:HMPatientServiceSearchPatientDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMPatientService/searchPatientDetailsAifFaultFault" name="AifFaultFault" message="tns:HMPatientService_searchPatientDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HMPatientVisitService">
+    <wsdl:operation name="updateVisitReason">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMPatientVisitService/updateVisitReason" name="HMPatientVisitServiceUpdateVisitReasonRequest" message="tns:HMPatientVisitServiceUpdateVisitReasonRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMPatientVisitService/updateVisitReasonResponse" name="HMPatientVisitServiceUpdateVisitReasonResponse" message="tns:HMPatientVisitServiceUpdateVisitReasonResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMPatientVisitService/updateVisitReasonAifFaultFault" name="AifFaultFault" message="tns:HMPatientVisitService_updateVisitReason_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPatientVisit">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMPatientVisitService/getPatientVisit" name="HMPatientVisitServiceGetPatientVisitRequest" message="tns:HMPatientVisitServiceGetPatientVisitRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMPatientVisitService/getPatientVisitResponse" name="HMPatientVisitServiceGetPatientVisitResponse" message="tns:HMPatientVisitServiceGetPatientVisitResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMPatientVisitService/getPatientVisitAifFaultFault" name="AifFaultFault" message="tns:HMPatientVisitService_getPatientVisit_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HMResourceService">
+    <wsdl:operation name="getResourceClinicsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMResourceService/getResourceClinicsList" name="HMResourceServiceGetResourceClinicsListRequest" message="tns:HMResourceServiceGetResourceClinicsListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMResourceService/getResourceClinicsListResponse" name="HMResourceServiceGetResourceClinicsListResponse" message="tns:HMResourceServiceGetResourceClinicsListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMResourceService/getResourceClinicsListAifFaultFault" name="AifFaultFault" message="tns:HMResourceService_getResourceClinicsList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getResourceSpecialitiesList">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMResourceService/getResourceSpecialitiesList" name="HMResourceServiceGetResourceSpecialitiesListRequest" message="tns:HMResourceServiceGetResourceSpecialitiesListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMResourceService/getResourceSpecialitiesListResponse" name="HMResourceServiceGetResourceSpecialitiesListResponse" message="tns:HMResourceServiceGetResourceSpecialitiesListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMResourceService/getResourceSpecialitiesListAifFaultFault" name="AifFaultFault" message="tns:HMResourceService_getResourceSpecialitiesList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyResourceSMSCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMResourceService/verifyResourceSMSCode" name="HMResourceServiceVerifyResourceSMSCodeRequest" message="tns:HMResourceServiceVerifyResourceSMSCodeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMResourceService/verifyResourceSMSCodeResponse" name="HMResourceServiceVerifyResourceSMSCodeResponse" message="tns:HMResourceServiceVerifyResourceSMSCodeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMResourceService/verifyResourceSMSCodeAifFaultFault" name="AifFaultFault" message="tns:HMResourceService_verifyResourceSMSCode_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getClinicsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMResourceService/getClinicsList" name="HMResourceServiceGetClinicsListRequest" message="tns:HMResourceServiceGetClinicsListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMResourceService/getClinicsListResponse" name="HMResourceServiceGetClinicsListResponse" message="tns:HMResourceServiceGetClinicsListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMResourceService/getClinicsListAifFaultFault" name="AifFaultFault" message="tns:HMResourceService_getClinicsList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getResourceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMResourceService/getResourceList" name="HMResourceServiceGetResourceListRequest" message="tns:HMResourceServiceGetResourceListRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMResourceService/getResourceListResponse" name="HMResourceServiceGetResourceListResponse" message="tns:HMResourceServiceGetResourceListResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMResourceService/getResourceListAifFaultFault" name="AifFaultFault" message="tns:HMResourceService_getResourceList_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getResourceDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMResourceService/getResourceDetails" name="HMResourceServiceGetResourceDetailsRequest" message="tns:HMResourceServiceGetResourceDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMResourceService/getResourceDetailsResponse" name="HMResourceServiceGetResourceDetailsResponse" message="tns:HMResourceServiceGetResourceDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMResourceService/getResourceDetailsAifFaultFault" name="AifFaultFault" message="tns:HMResourceService_getResourceDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="generateResourceSMSCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMResourceService/generateResourceSMSCode" name="HMResourceServiceGenerateResourceSMSCodeRequest" message="tns:HMResourceServiceGenerateResourceSMSCodeRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMResourceService/generateResourceSMSCodeResponse" name="HMResourceServiceGenerateResourceSMSCodeResponse" message="tns:HMResourceServiceGenerateResourceSMSCodeResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMResourceService/generateResourceSMSCodeAifFaultFault" name="AifFaultFault" message="tns:HMResourceService_generateResourceSMSCode_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getClinicDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/HMResourceService/getClinicDetails" name="HMResourceServiceGetClinicDetailsRequest" message="tns:HMResourceServiceGetClinicDetailsRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/HMResourceService/getClinicDetailsResponse" name="HMResourceServiceGetClinicDetailsResponse" message="tns:HMResourceServiceGetClinicDetailsResponse" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/HMResourceService/getClinicDetailsAifFaultFault" name="AifFaultFault" message="tns:HMResourceService_getClinicDetails_AifFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
